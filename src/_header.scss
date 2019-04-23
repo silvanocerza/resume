@@ -8,9 +8,17 @@
 
 .name-title {
   margin-bottom: .5rem;
+  color: transparent;
+  background: $name-gradient-dark;
+  background: -webkit-linear-gradient(to right, $name-gradient-dark, $name-gradient-light);
+  background: linear-gradient(to right, $name-gradient-dark, $name-gradient-light);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .location {
+  color: $silver;
+  font-weight: 500;
   margin-bottom: .5rem;
 }
 
