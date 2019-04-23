@@ -1,6 +1,6 @@
 @import 'colors';
 
-.experience {
+.project {
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
@@ -12,19 +12,19 @@
   display: flex;
   flex-direction: row;
   align-items: baseline;
+}
 
-  & > .experience-title {
-    margin-top: 0;
-    margin-bottom: 0;
-    flex-grow: 1;
-  }
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+  flex-grow: 1;
+}
 
-  & > .date {
-    margin-top: 0;
-    color: $silver;
-    font-weight: 700;
-    white-space: nowrap;
-  }
+.date {
+  margin-top: 0;
+  color: $silver;
+  font-weight: 700;
+  white-space: nowrap;
 }
 
 .website {
