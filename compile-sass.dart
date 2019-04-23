@@ -1,6 +1,17 @@
 import 'dart:io';
 import 'package:sass/sass.dart' as sass;
 
+void compile(String input, File output, sass.OutputStyle style) {
+  print(Process.runSync("clear", [], runInShell: true).stdout);
+  try {
+    var result = sass.compile(input, style: style, color: true);
+    output.writeAsStringSync(result);
+    print('Compilation successful!');
+  } on sass.SassException catch (e) {
+    print(e.toString());
+  }
+}
+
 void main(List<String> args) {
   var input = File(args[0]);
   var output = File(args[1]);
@@ -9,14 +20,11 @@ void main(List<String> args) {
       ? sass.OutputStyle.compressed
       : sass.OutputStyle.expanded;
 
+  compile(input.path, output, style);
+
   if (args.contains('--watch') || args.contains('-w')) {
     input.watch(events: FileSystemEvent.modify).listen((e) {
-      var result = sass.compile(e.path, style: style);
-      output.writeAsStringSync(result);
+      compile(e.path, output, style);
     });
-    return;
   }
-
-  var result = sass.compile(input.path, style: style);
-  output.writeAsStringSync(result);
 }
