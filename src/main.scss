@@ -1,0 +1,36 @@
+@import 'colors';
+@import 'header';
+@import 'line';
+@import 'project-block';
+
+html {
+  background-color: hsl(0, 0%, 93%);
+}
+
+#content {
+  box-sizing: border-box;
+  width: 21cm;
+  max-width: 21cm;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: $tuna;
+  background-color: $white;
+  box-shadow: $silver 0px 0px 10px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+#intro {
+  margin: 0;
+}
+
+.section-title {
+  margin-bottom: 0.5rem;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+}

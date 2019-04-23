@@ -1,0 +1,19 @@
+@import 'colors';
+
+.h-line {
+  display: block;
+  height: 1rem;
+  border: 0;
+  border-top-width: 2px;
+  border-top-color: $tuna;
+  margin: 0;
+  padding: 0;
+}
+
+.dashed {
+  border-top-style: dashed;
+}
+
+.solid {
+  border-top-style: solid;
+}

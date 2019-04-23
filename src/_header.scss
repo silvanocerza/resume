@@ -1,0 +1,30 @@
+@import 'colors';
+
+#head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.name-title {
+  margin-bottom: .5rem;
+}
+
+.location {
+  margin-bottom: .5rem;
+}
+
+#contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 1rem;
+}
+
+.contact {
+  color: $tuna;
+
+  &:hover {
+    color: $accent;
+  }
+}
