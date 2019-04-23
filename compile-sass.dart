@@ -23,8 +23,8 @@ void main(List<String> args) {
   compile(input.path, output, style);
 
   if (args.contains('--watch') || args.contains('-w')) {
-    input.watch(events: FileSystemEvent.modify).listen((e) {
-      compile(e.path, output, style);
+    input.parent.watch(events: FileSystemEvent.modify).listen((e) {
+      compile(input.path, output, style);
     });
   }
 }
