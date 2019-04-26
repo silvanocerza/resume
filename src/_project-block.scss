@@ -31,12 +31,14 @@
 }
 
 .website {
-  color: $tundora;
   margin-bottom: .4rem;
   margin-top: 0;
 
-  &:hover {
-    color: $accent;
+  a {
+    color: $tundora;
+    &:hover {
+      color: $accent;
+    }
   }
 }
 
