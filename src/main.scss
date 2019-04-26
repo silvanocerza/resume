@@ -32,3 +32,19 @@ html {
   display: flex;
   flex-wrap: wrap;
 }
+
+@media print {
+  html {
+    background-color: $white;
+  }
+
+  #content {
+    margin: 0;
+    padding: 0;
+    box-shadow: unset;
+  }
+
+  .pagebreak {
+    page-break-after: always;
+  }
+}
