@@ -74,15 +74,13 @@
       </div>
 
       <p id="intro">
-        I enjoy working on different platforms and technologies,
-        but most of my time is spent writing desktop or mobile applications
-        with Qt, a C++ framework.
-        I also worked on some web applications in Django and Golang and use Python
-        whenever C++ is not the best fit for the job. Mostly for personal projects I’ve also
-        worked with the frontend stack throughout the years. I’m never scared
-        to tackle a new task using unknown languages or technology,
-        in fact it’s something that I aim for since I believe it’s the best way
-        to learn something new.
+        I enjoy working on different platforms and technologies, right now
+        most of my time is spent multi platform desktop applications in Golang.
+        In the past I used to write desktop and mobile applications with Qt, a C++ framework.
+        I also had the chance to work on some small web applications in Django/Python.
+        Mostly for personal projects I’ve also used the frontend stack throughout the years.
+        I’m never scared to tackle a new task using unknown languages or technology,
+        it’s something that I aim for since I believe it’s the best way to learn something new.
       </p>
 
       <h2 class="section-title">Work Experience</h2>
@@ -124,7 +122,7 @@
         <div class="project is-half-width">
           <div class="header">
             <h4 class="title">Molecular Horizon</h4>
-            <p class="date">Jun 2019 – Present</p>
+            <p class="date">Jun 2019 – Jul 2020</p>
           </div>
           <p class="website">
             <a href="http://www.molhorizon.it/">
@@ -146,12 +144,74 @@
             <p class="tech">Qt Quick</p>
           </div>
         </div>
+
+        <div class="project">
+          <div class="header">
+            <h4 class="title">Arduino</h4>
+            <p class="date">Jul 2020 – Present</p>
+          </div>
+          <p class="website">
+            <a href="https://arduino.cc/">
+              <i class="mdi mdi-web"></i>
+              arduino.cc
+            </a>
+          </p>
+          <p class="description">
+            I work mainly on the ArduinoCLI, implementing
+            new features, fixing bugs and writing tests.
+            <br/>
+            I also work on other minor supporting projects
+            for the ArduinoCLI like external libraries,
+            GitHub Workflows Actions and similar things.
+            <br/>
+            Most of the times I handle the release process
+            of the ArduinoCLI, from triggering the build process
+            to communicating with marketing for social communications.
+          </p>
+          <div class="techs">
+            <p class="tech">Golang</p>
+            <p class="tech">Python</p>
+            <p class="tech">TypeScript</p>
+          </div>
+        </div>
       </div>
+      <div class="pagebreak"></div>
 
       <h2 class="section-title">Work Projects</h2>
       <hr class="h-line dashed"/>
 
       <div class="section">
+        <div class="project is-half-width">
+          <div class="header">
+            <h4 class="title">ArduinoCLI</h4>
+          </div>
+          <p class="website">
+            <a href="http://github.com/arduino/arduino-cli">
+              <i class="mdi mdi-web"></i>
+              github.com/arduino/arduino-cli
+            </a>
+          </p>
+          <p class="description">
+            ArduinoCLI is a command line tool written in Go,
+            it's used to manage and install libraries,
+            the tools necessary to compile and upload
+            to different Arduino boards, and several other things.
+            <br/>
+            Among its features it's also the backbone
+            of the new Arduino IDE, using a gRPC interface to
+            communicate with each other.
+            <br/>
+            I plan and implement new features, fix existing bugs, enhance
+            legacy parts and write tests for untested parts of the code.
+          </p>
+          <div class="techs">
+            <p class="tech">Golang</p>
+            <p class="tech">Python</p>
+            <p class="tech">gRPC</p>
+            <p class="tech">Protobuf</p>
+          </div>
+        </div>
+
         <div class="project is-half-width">
           <div class="header">
             <h4 class="title">Kibitzer</h4>
@@ -255,7 +315,7 @@
             </a>
           </p>
           <p class="description">
-            A CLI tool to handle upload and 
+            A CLI tool to handle upload and
             download of versioned files to AWS S3 buckets.
           </p>
           <div class="techs">
@@ -266,12 +326,57 @@
 
       </div>
 
-      <div class="pagebreak"></div>
-
       <h2 class="section-title">Personal Projects</h2>
       <hr class="h-line dashed"/>
 
       <div class="section">
+        <div class="project is-half-width">
+          <div class="header">
+            <h4 class="title">Yellow Rats</h4>
+          </div>
+          <p class="website">
+            <a href="https://github.com/silvanocerza/yellow-rats/">
+              <i class="mdi mdi-github-circle"></i>
+              /silvanocerza/yellow-rats/
+            </a>
+          </p>
+          <p class="description">
+            A simple GUI written in C++ using OpenCV and ZBar,
+            to scan and catalog comics by number and quality.
+          </p>
+          <div class="techs">
+            <p class="tech">C++</p>
+            <p class="tech">OpenCV</p>
+            <p class="tech">ZBar</p>
+            <p class="tech">CMake</p>
+          </div>
+        </div>
+
+        <div class="project is-half-width">
+          <div class="header">
+            <h4 class="title">Datadog Agent</h4>
+          </div>
+          <p class="website">
+            <a href="https://github.com/DataDog/datadog-agent/">
+              <i class="mdi mdi-github-circle"></i>
+              /DataDog/datadog-agent
+            </a>
+          </p>
+          <p class="description">
+            Datadog Agent is an open source monitoring tool.
+            <br/>
+            I contributed to Six, a C++ wrapper around the CPython API
+            supporting multiple versions of Python that can be used by
+            other languages like Go.
+          </p>
+          <div class="techs">
+            <p class="tech">C++</p>
+            <p class="tech">C</p>
+            <p class="tech">CPython</p>
+            <p class="tech">Go</p>
+          </div>
+        </div>
+
         <div class="project is-half-width">
           <div class="header">
             <h4 class="title">Cute Code Accessor</h4>
@@ -356,56 +461,6 @@
             <p class="tech">Dart</p>
             <p class="tech">Sass</p>
             <p class="tech">CSS</p>
-          </div>
-        </div>
-
-        <div class="project is-half-width">
-          <div class="header">
-            <h4 class="title">Datadog Agent</h4>
-          </div>
-          <p class="website">
-            <a href="https://github.com/DataDog/datadog-agent/">
-              <i class="mdi mdi-github-circle"></i>
-              /DataDog/datadog-agent
-            </a>
-          </p>
-          <p class="description">
-            Datadog Agent is an open source monitoring tool.
-            <br/>
-            I contributed to Six, a C++ wrapper around the CPython API
-            supporting multiple versions of Python that can be used by
-            other languages like Go.
-          </p>
-          <div class="techs">
-            <p class="tech">C++</p>
-            <p class="tech">C</p>
-            <p class="tech">CPython</p>
-            <p class="tech">Go</p>
-          </div>
-        </div>
-
-        <div class="project is-half-width">
-          <div class="header">
-            <h4 class="title">Exercism</h4>
-          </div>
-          <p class="website">
-            <a href="https://github.com/exercism/">
-              <i class="mdi mdi-github-circle"></i>
-              /Exercism/
-            </a>
-          </p>
-          <p class="description">
-            Exercism is a learning platform for
-            beginner software developers.
-            <br/>
-            I’m helping migrate the C++ track
-            to the new version of the site by
-            writing new exercises and building
-            tools to ease the self learning journey
-            of the students.
-          </p>
-          <div class="techs">
-            <p class="tech">C++</p>
           </div>
         </div>
 
