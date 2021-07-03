@@ -1,18 +1,11 @@
-@import 'colors';
-@import 'header';
-@import 'line';
-@import 'project-block';
+@import "colors";
+@import "header";
+@import "line";
+@import "project-block";
 
 body {
   background-color: $gallery;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-#warning {
-  display: none;
-  text-align: center;
-  background-color: $gallery;
-  color: $boulder;
 }
 
 #download-section {
@@ -71,22 +64,49 @@ body {
     padding: 1rem;
   }
 
-  #download-section {
-    text-align: right;
-  }
-
   #download-button {
     background: $gallery;
   }
 }
 
 @media screen and (max-width: 700px) {
-  #warning {
-    display: inline;
+  body {
+    margin: 0;
+    background: $white;
+  }
+
+  #download-button {
+    background: $gallery;
   }
 
   #content {
-    display: none;
+    width: 100%;
+    box-shadow: none;
+    padding: 1rem;
+  }
+
+  #head {
+    flex-direction: column;
+  }
+
+  .contacts {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  #intro {
+    margin-top: 0.5rem;
+  }
+
+  .is-half-width {
+    // This class is used on bigger screens and
+    // for printing to avoid taking the whole screen,
+    // but on smaller screens like mobile if we leave
+    // it as 50% it sucks, so we let it take the whole
+    // screen.
+    // Makes sense, right?
+    width: 100%;
   }
 }
 
