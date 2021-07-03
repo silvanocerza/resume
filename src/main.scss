@@ -89,6 +89,14 @@ body {
     flex-direction: column;
   }
 
+  // Overly specific but it does its job.
+  // I just need to hide the hyphen when
+  // the text is not on the same line
+  // on mobile.
+  #name-role-separator {
+    display: none;
+  }
+
   .contacts {
     flex-direction: column;
     align-items: center;
