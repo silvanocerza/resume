@@ -1,10 +1,8 @@
-Resume
-======
+# Resume
 
-This are the sources for my resume, if are interested you can find it on [here](https://www.silvanocerza.com/resume).
+This are the sources for my resume, if are interested you can find it on [here](https://resume.silvanocerza.com).
 
-Building
-========
+# Building
 
 To compile SCSS `dart compile-sass.dart ./src/main.scss main.css`.
 `--watch` or `-w` to autoreload on modification.
