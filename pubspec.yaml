@@ -1,3 +1,5 @@
 name: resume
+environment:
+  sdk: ">=2.10.0 <3.0.0"
 dev_dependencies:
   sass: 1.19.0
