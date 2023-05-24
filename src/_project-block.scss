@@ -7,6 +7,13 @@
   padding: 0.5rem;
 }
 
+.secondary-projects {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 .is-half-width {
   width: 50%;
 }
@@ -44,6 +51,7 @@
 
 .description {
   margin: 0;
+  text-align: justify;
 }
 
 .techs {

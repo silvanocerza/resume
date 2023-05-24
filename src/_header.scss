@@ -3,7 +3,6 @@
 #head {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
 }
 
 .name-role {
@@ -11,22 +10,16 @@
   margin-bottom: 0.5rem;
 }
 
-.location {
-  color: $silver;
-  font-weight: 500;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-
 .contacts {
   display: flex;
-  justify-content: space-evenly;
-  align-items: stretch;
-  margin-bottom: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 2rem;
 }
 
 .contact {
   color: $tuna;
+  white-space: nowrap;
 
   &:hover {
     color: $accent;
