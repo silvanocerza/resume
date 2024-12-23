@@ -1,5 +1,0 @@
-name: resume
-environment:
-  sdk: ">=3.0.0"
-dev_dependencies:
-  sass: ^1.62.1
