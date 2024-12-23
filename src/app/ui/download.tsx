@@ -16,7 +16,7 @@ export default function Download() {
         whitespace-nowrap
         cursor-pointer
         hover:bg-[#d9d9d9]
-        sm:bg-[#ededed]
+        bg-[#ededed]
         "
       >
         <FontAwesomeIcon icon="fa-solid fa-file-pdf" className="fa-fw" />
