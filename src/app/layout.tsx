@@ -27,19 +27,20 @@ export default function RootLayout({
       <body
         className={`
           antialiased
-          bg-[#ededed]`}
+          sm:bg-white
+          md:bg-[#ededed]`}
       >
         <div className="flex flex-col">
           <Download />
           <div
             className="m-2
           box-border
-          w-[21cm]
-          max-w-[21cm]
+          md:w-[21cm]
+          md:max-w-[21cm]
           mx-auto
           p-8
           bg-white
-          shadow-[0px_0px_10px_10px_#C0C0C0]
+          md:shadow-[0px_0px_10px_10px_#C0C0C0]
           text-base"
           >
             {children}
