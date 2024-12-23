@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import Download from "@/app/ui/download";
 import "./globals.css";
 import { config, library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
@@ -11,16 +11,6 @@ config.autoAddCss = false;
 
 // TODO: Add just the icons used when most of the other stuff is done
 library.add(fas, fab);
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -36,14 +26,13 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`
-          ${geistSans.variable}
-          ${geistMono.variable}
           antialiased
-          bg-gray-100`}
+          bg-[#ededed]`}
       >
-        {/* This is our paper */}
-        <div
-          className="m-2
+        <div className="flex flex-col">
+          <Download />
+          <div
+            className="m-2
           box-border
           w-[21cm]
           max-w-[21cm]
@@ -52,8 +41,9 @@ export default function RootLayout({
           bg-white
           shadow-[0px_0px_10px_10px_#C0C0C0]
           text-base"
-        >
-          {children}
+          >
+            {children}
+          </div>
         </div>
       </body>
     </html>
