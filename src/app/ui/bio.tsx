@@ -1,4 +1,45 @@
+import SocialLink from "@/app/components/social-link";
+
+interface Social {
+  icon: string;
+  link: string;
+  link_text: string;
+}
+
 export default function Bio() {
+  const socials: Social[] = [
+    {
+      icon: "fab fa-github",
+      link: "https://github.com/silvanocerza",
+      link_text: "/silvanocerza",
+    },
+    {
+      icon: "fab fa-linkedin",
+      link: "https://www.linkedin.com/in/silvanocerza",
+      link_text: "/in/silvanocerza",
+    },
+    {
+      icon: "fab fa-bluesky",
+      link: "https://bsky.app/profile/silvanocerza.bsky.social",
+      link_text: "/profile/silvanocerza.bsky.social",
+    },
+    {
+      icon: "fab fa-mastodon",
+      link: "https://mastodon.world/@silvanocerza",
+      link_text: "@silvanocerza@mastodon.world",
+    },
+    {
+      icon: "fa fa-at",
+      link: "mailto:silvanocerza@gmail.com",
+      link_text: "silvanocerza@gmail.com",
+    },
+    {
+      icon: "fa fa-globe",
+      link: "https://silvanocerza.com",
+      link_text: "silvanocerza.com",
+    },
+  ];
+
   return (
     <div>
       <div
@@ -21,8 +62,8 @@ export default function Bio() {
           <h1 className="text-nowrap">Software Engineer</h1>
         </div>
       </div>
-      <div className="flex">
-        <p>
+      <div className="flex flex-col gap-4">
+        <p className="text-justify">
           I enjoy working on different platforms, technologies and solving tough
           problems. I consider myself a generalist and am never scared to tackle
           a new challenge using unknown languages or technology. It’s something
@@ -34,6 +75,16 @@ export default function Bio() {
           Clojure/Script, enhance and evolve CI/CD infrastructure on CircleCI
           and GitHub Workflows.
         </p>
+        <div className="flex flex-row flex-wrap justify-evenly">
+          {socials.map(({ icon, link, link_text }) => (
+            <SocialLink
+              key={link}
+              icon={icon}
+              link={link}
+              link_text={link_text}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
