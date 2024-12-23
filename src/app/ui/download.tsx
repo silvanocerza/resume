@@ -19,7 +19,7 @@ export default function Download() {
         bg-[#ededed]
         "
       >
-        <FontAwesomeIcon icon="fa-solid fa-file-pdf" className="fa-fw" />
+        <FontAwesomeIcon icon={["fas", "file-pdf"]} className="fa-fw" />
         Download PDF
       </button>
     </div>

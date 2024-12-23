@@ -29,7 +29,7 @@ export default function Experience({
       </div>
 
       <a className="text-gray-700 underline hover:text-red-500" href={link}>
-        <FontAwesomeIcon icon="fa-solid fa-globe" className="fa-fw" />
+        <FontAwesomeIcon icon={["fas", "globe"]} className="fa-fw" />{" "}
         {link_text}
       </a>
       <div className="pb-1 pt-1 text-justify">{children}</div>

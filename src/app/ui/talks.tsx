@@ -18,7 +18,7 @@ export default function Talks() {
       <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
         <Talk
           name="Monitoring Open Source Success in Arduino"
-          icon="fa-brands fa-youtube"
+          icon={["fab", "youtube"]}
           link="https://www.youtube.com/watch?v=C4JxwgNnIWU"
           link_text="/watch?v=C4JxwgNnIWU"
           date="Oct 2021"
@@ -32,7 +32,7 @@ export default function Talks() {
         </Talk>
         <Talk
           name="Haystack 2.0: the story of a rewrite"
-          icon="fa-brands fa-youtube"
+          icon={["fab", "youtube"]}
           link="https://www.youtube.com/watch?v=0CNSvGlMNSo"
           link_text="/watch?v=0CNSvGlMNSo"
           date="Apr 2024"

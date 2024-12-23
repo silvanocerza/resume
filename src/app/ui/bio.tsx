@@ -1,7 +1,8 @@
 import SocialLink from "@/app/components/social-link";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 interface Social {
-  icon: string;
+  icon: IconProp;
   link: string;
   link_text: string;
 }
@@ -9,32 +10,32 @@ interface Social {
 export default function Bio() {
   const socials: Social[] = [
     {
-      icon: "fab fa-github",
+      icon: ["fab", "github"],
       link: "https://github.com/silvanocerza",
       link_text: "/silvanocerza",
     },
     {
-      icon: "fab fa-linkedin",
+      icon: ["fab", "linkedin"],
       link: "https://www.linkedin.com/in/silvanocerza",
       link_text: "/in/silvanocerza",
     },
     {
-      icon: "fab fa-bluesky",
+      icon: ["fab", "bluesky"],
       link: "https://bsky.app/profile/silvanocerza.bsky.social",
       link_text: "/profile/silvanocerza.bsky.social",
     },
     {
-      icon: "fab fa-mastodon",
+      icon: ["fab", "mastodon"],
       link: "https://mastodon.world/@silvanocerza",
       link_text: "@silvanocerza@mastodon.world",
     },
     {
-      icon: "fa fa-at",
+      icon: ["fas", "at"],
       link: "mailto:silvanocerza@gmail.com",
       link_text: "silvanocerza@gmail.com",
     },
     {
-      icon: "fa fa-globe",
+      icon: ["fas", "globe"],
       link: "https://silvanocerza.com",
       link_text: "silvanocerza.com",
     },

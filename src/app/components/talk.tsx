@@ -1,3 +1,4 @@
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Talk({
@@ -9,7 +10,7 @@ export default function Talk({
   children,
 }: {
   name: string;
-  icon: string;
+  icon: IconProp;
   link: string;
   link_text: string;
   date: string;

@@ -18,7 +18,7 @@ export default function WorkProjects() {
       <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
         <Project
           name="Haystack"
-          icon="fa-brands fa-github"
+          icon={["fab", "github"]}
           link="https://github.com/deepset-ai/haystack"
           link_text="/deepset-ai/haystack"
           technologies={["Python", "GitHub Actions"]}
@@ -32,7 +32,7 @@ export default function WorkProjects() {
         </Project>
         <Project
           name="Arduino CLI"
-          icon="fa-brands fa-github"
+          icon={["fab", "github"]}
           link="https://github.com/arduino/arduino-cli"
           link_text="/arduino/arduino-cli"
           technologies={["Golang", "Python", "gRPC", "Protobuf"]}
@@ -47,7 +47,7 @@ export default function WorkProjects() {
 
         <Project
           name="Arduino IDE 2"
-          icon="fa-brands fa-github"
+          icon={["fab", "github"]}
           link="https://github.com/arduino/arduino-ide"
           link_text="/arduino/arduino-ide"
           technologies={["Node", "Electron", "React", "TypeScript", "Theia"]}
@@ -64,7 +64,7 @@ export default function WorkProjects() {
 
         <Project
           name="Kibitzer"
-          icon="fa-solid fa-globe"
+          icon={["fas", "globe"]}
           link="http://www.moldiscovery.com/software/moka/"
           link_text="moldiscovery.com/software/moka"
           technologies={["C", "C++", "Qt", "QML", "Qt Quick"]}
@@ -78,7 +78,7 @@ export default function WorkProjects() {
 
         <Project
           name="Qnite"
-          icon="fa-brands fa-github"
+          icon={["fab", "github"]}
           link="https://github.com/evonove/qnite/"
           link_text="/evonove/qnite/"
           technologies={["C++", "Qt", "QML", "Qt Quick"]}
@@ -90,7 +90,7 @@ export default function WorkProjects() {
 
         <Project
           name="MKM SDK"
-          icon="fa-brands fa-github"
+          icon={["fab", "github"]}
           link="https://github.com/silvanocerza/mkm-sdk/"
           link_text="/silvanocerza/mkm-sdk"
           technologies={["Python", "OAuth"]}

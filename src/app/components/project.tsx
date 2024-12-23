@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Tag from "@/app/components/tag";
 import React from "react";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 export default function Project({
   name,
@@ -11,7 +12,7 @@ export default function Project({
   children,
 }: {
   name: string;
-  icon: string;
+  icon: IconProp;
   link: string;
   link_text: string;
   technologies: string[];

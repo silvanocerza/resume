@@ -1,3 +1,4 @@
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function SocialLink({
@@ -5,7 +6,7 @@ export default function SocialLink({
   link,
   link_text,
 }: {
-  icon: string;
+  icon: IconProp;
   link: string;
   link_text: string;
 }) {
