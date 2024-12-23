@@ -1,18 +1,27 @@
 export default function Bio() {
   return (
     <div>
-      <h1
+      <div
         className="
-      text-4xl
-      font-bold
-      pb-2
-      mb-2
-      border-b-2
-      border-green-600"
+        flex
+        flex-col
+        items-start
+        text-4xl
+        font-bold
+        pb-2
+        mb-2
+        border-b-2
+        border-green-600"
       >
-        Silvano Cerza - Software Engineer
-      </h1>
-      <div>
+        {/* This one is shown on non phone screens */}
+        <h1 className="hidden sm:block">Silvano Cerza — Software Engineer</h1>
+        {/* The one below instead is for phone screens */}
+        <div className="flex sm:hidden flex-col">
+          <h1 className="text-nowrap">Silvano Cerza</h1>
+          <h1 className="text-nowrap">Software Engineer</h1>
+        </div>
+      </div>
+      <div className="flex">
         <p>
           I enjoy working on different platforms, technologies and solving tough
           problems. I consider myself a generalist and am never scared to tackle
