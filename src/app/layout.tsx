@@ -1,6 +1,16 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { config, library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+
+import "@fortawesome/fontawesome-svg-core/styles.css";
+
+config.autoAddCss = false;
+
+// TODO: Add just the icons used when most of the other stuff is done
+library.add(fas, fab);
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,9 +35,26 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`
+          ${geistSans.variable}
+          ${geistMono.variable}
+          antialiased
+          bg-gray-100`}
       >
-        {children}
+        {/* This is our paper */}
+        <div
+          className="m-2
+          box-border
+          w-[21cm]
+          max-w-[21cm]
+          mx-auto
+          p-8
+          bg-white
+          shadow-[0px_0px_10px_10px_#C0C0C0]
+          text-base"
+        >
+          {children}
+        </div>
       </body>
     </html>
   );
