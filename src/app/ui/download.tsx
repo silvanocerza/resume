@@ -3,7 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Download() {
   return (
     <div className="flex justify-center print:hidden">
-      <button
+      <a
+        href="/SilvanoCerzaResume.pdf"
+        download="SilvanoCerzaResume.pdf"
         className="
         p-1
         m-2
@@ -21,7 +23,7 @@ export default function Download() {
       >
         <FontAwesomeIcon icon={["fas", "file-pdf"]} className="fa-fw" />
         Download PDF
-      </button>
+      </a>
     </div>
   );
 }
