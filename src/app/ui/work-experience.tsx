@@ -2,7 +2,7 @@ import Experience from "@/app/components/experience";
 
 export default function WorkExperience() {
   return (
-    <div>
+    <div className="print:break-after-page">
       <h2
         className="
       text-2xl
