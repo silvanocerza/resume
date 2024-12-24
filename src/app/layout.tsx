@@ -12,23 +12,19 @@ config.autoAddCss = false;
 // TODO: Add just the icons used when most of the other stuff is done
 library.add(fas, fab);
 
+const metadataBase = process.env.CONTEXT
+  ? ({
+      production: process.env.URL,
+      "branch-deploy": process.env.DEPLOY_PRIME_URL,
+      "deploy-preview": process.env.DEPLOY_PRIME_URL,
+    }[process.env.CONTEXT] ?? "")
+  : "http://localhost:3000";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(metadataBase),
   title: "Silvano Cerza — Software Engineer",
   description:
     "Hey! I'm Silvano, a Software Engineer, and this is my resume. Feel free to take a look at it. :)",
-  openGraph: {
-    title: "Silvano Cerza — Software Engineer",
-    description:
-      "Hey! I'm Silvano, a Software Engineer, and this is my resume. Feel free to take a look at it. :)",
-    images: [
-      {
-        url: "/opengraph-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Hey! I'm Silvano, a Software Engineer, and this is my resume. Feel free to take a look at it. :)",
-      },
-    ],
-  },
 };
 
 export default function RootLayout({
