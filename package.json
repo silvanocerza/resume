@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "postbuild": "npm run create-pdf",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "create-pdf": "tsx create-pdf.ts"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
@@ -19,13 +21,18 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@types/chrome-remote-interface": "^0.31.14",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/selenium-webdriver": "^4.1.27",
+    "chrome-remote-interface": "^0.33.2",
     "eslint": "^9",
     "eslint-config-next": "15.1.2",
     "postcss": "^8",
+    "selenium-webdriver": "^4.27.0",
     "tailwindcss": "^3.4.1",
+    "tsx": "^4.19.2",
     "typescript": "^5"
   }
 }
