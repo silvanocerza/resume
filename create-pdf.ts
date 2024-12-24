@@ -25,12 +25,7 @@ function findPython(): string | null {
   // Start a Python server to serve the static HTML file.
   // This assumes the project has already been built.
   const serverPort = "3000";
-  let outPath = root;
-
-  // Netlify build env is slightly different
-  if (!process.env.NETLIFY) {
-    outPath = path.join(root, "out");
-  }
+  const outPath = path.join(root, "out");
 
   const server = spawn(python, [
     "-m",
