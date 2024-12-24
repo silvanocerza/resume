@@ -1,6 +1,8 @@
 # Resume
 
-This are the sources for my resume, if are interested you can find it on [here](https://resume.silvanocerza.com).
+These are the sources for my resume, if you are interested you can find it on [here](https://resume.silvanocerza.com).
+
+It's built with [Next.js](https://nextjs.org) and [Tailwind CSS](https://tailwindcss.com) and deployed on [Netlify](https://netlify.com) as a static site.
 
 # Building
 
@@ -9,6 +11,9 @@ To work on the resume:
 ```bash
 pnpm dev
 ```
+
+If you want to test the PDF generation you can run `pnpm build`, that will build the resume website and create a PDF file from it.
+It's not necessary to commit the PDF file as it's generated on the fly each time the website is built for production.
 
 # Learn More
 
@@ -21,4 +26,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy
 
-TODO
+To deploy just push to `master`. Netlify will take care of the rest.
