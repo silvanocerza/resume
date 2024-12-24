@@ -28,7 +28,10 @@ export default function Experience({
         </p>
       </div>
 
-      <a className="text-gray-700 underline hover:text-red-500" href={link}>
+      <a
+        className="text-gray-700 underline hover:text-red-500 w-fit"
+        href={link}
+      >
         <FontAwesomeIcon icon={["fas", "globe"]} className="fa-fw" />{" "}
         {link_text}
       </a>

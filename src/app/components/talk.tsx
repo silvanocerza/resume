@@ -23,7 +23,10 @@ export default function Talk({
         <p className="font-extrabold text-gray-300 whitespace-nowrap">{date}</p>
       </div>
 
-      <a className="text-gray-700 underline hover:text-red-500" href={link}>
+      <a
+        className="text-gray-700 underline hover:text-red-500 w-fit"
+        href={link}
+      >
         <FontAwesomeIcon icon={icon} className="fa-fw" />
         {link_text}
       </a>
