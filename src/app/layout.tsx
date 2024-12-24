@@ -16,6 +16,19 @@ export const metadata: Metadata = {
   title: "Silvano Cerza — Software Engineer",
   description:
     "Hey! I'm Silvano, a Software Engineer, and this is my resume. Feel free to take a look at it. :)",
+  openGraph: {
+    title: "Silvano Cerza — Software Engineer",
+    description:
+      "Hey! I'm Silvano, a Software Engineer, and this is my resume. Feel free to take a look at it. :)",
+    images: [
+      {
+        url: "/opengraph-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Hey! I'm Silvano, a Software Engineer, and this is my resume. Feel free to take a look at it. :)",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
