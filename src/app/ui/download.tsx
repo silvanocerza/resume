@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Download() {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center print:hidden">
       <button
         className="
         p-1

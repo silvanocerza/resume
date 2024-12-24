@@ -15,7 +15,7 @@ export default function PersonalProjects() {
       >
         Personal Projects
       </h2>
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 print:grid-cols-2 ">
         <Project
           name="Caina"
           icon={["fab", "github"]}

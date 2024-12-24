@@ -41,7 +41,8 @@ export default function RootLayout({
           p-8
           bg-white
           md:shadow-[0px_0px_10px_10px_#C0C0C0]
-          text-base"
+          text-base
+          leading-tight"
           >
             {children}
           </div>
