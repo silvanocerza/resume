@@ -17,7 +17,7 @@ export default function Experience({
   technologies: string[];
   start_date: string;
   end_date?: string;
-  children?: React.ReactElement | string;
+  children?: React.ReactNode | string;
 }) {
   return (
     <div className="flex flex-col">

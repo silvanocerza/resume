@@ -24,9 +24,12 @@ export default function WorkExperience() {
           technologies={["Python", "GitHub Actions"]}
         >
           I'm part of the Core Team and one of the main developer of Haystack
-          and related projects. Part of my time is also dedicated to all the
-          stuff that managing an OS project like Haystack entails, like triaging
-          community issues and giving support in the official community Discord.
+          and related projects.
+          <br />
+          Part of my time is also dedicated to all the stuff that managing an OS
+          project like Haystack entails, like triaging community issues and
+          giving support in the official community Discord.
+          <br />
           In my day to day work I develop new feature, squash bugs, enhance
           release, testing, and CI processes. I also closely collaborate with
           other companies engineers to integrate with their projects.
@@ -40,12 +43,14 @@ export default function WorkExperience() {
           technologies={["Clojure", "ClojureScript", "Python", "CircleCI"]}
         >
           I was part of the DevOps team and focused on CI, release management
-          and developers experience. Most of my time was spent enhancing and
-          evolving our CircleCI infrastructure, making the release process
-          leaner and easier to understand, building scripts and tools to enhance
-          the day to day job of other developers. I also contributed in small
-          parts to the main product application writing Clojure and
-          ClojureScript.
+          and developers experience.
+          <br />
+          Most of my time was spent enhancing and evolving our CircleCI
+          infrastructure, making the release process leaner and easier to
+          understand, building scripts and tools to enhance the day to day job
+          of other developers.
+          <br />I also contributed in small parts to the main product
+          application writing Clojure and ClojureScript.
         </Experience>
         <Experience
           name="Arduino"
@@ -56,11 +61,14 @@ export default function WorkExperience() {
           technologies={["Golang", "Python", "TypeScript", "GitHub Actions"]}
         >
           I worked mainly on the ArduinoCLI, implementing new features, fixing
-          bugs and writing tests. I also took part on other minor supporting
-          projects for the ArduinoCLI like external libraries, GitHub Workflows
-          Actions and similar things. Most of the times I managed the release
-          process of the ArduinoCLI, from triggering the build process to
-          communicating with marketing for social communications.
+          bugs and writing tests.
+          <br />
+          I also took part on other minor supporting projects for the ArduinoCLI
+          like external libraries, GitHub Workflows Actions and similar things.
+          <br />
+          Most of the times I managed the release process of the ArduinoCLI,
+          from triggering the build process to communicating with marketing for
+          social communications.
         </Experience>
         <div className="flex flex-col gap-4">
           <Experience
