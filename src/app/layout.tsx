@@ -2,15 +2,19 @@ import type { Metadata } from "next";
 import Download from "@/app/ui/download";
 import "./globals.css";
 import { config, library } from "@fortawesome/fontawesome-svg-core";
-import { fas } from "@fortawesome/free-solid-svg-icons";
-import { fab } from "@fortawesome/free-brands-svg-icons";
-
+import { faGlobe, faAt, faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
+  faBluesky,
+  faLinkedin,
+  faMastodon,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
 config.autoAddCss = false;
-
-// TODO: Add just the icons used when most of the other stuff is done
-library.add(fas, fab);
+library.add(faGlobe, faAt, faFilePdf);
+library.add(faGithub, faBluesky, faLinkedin, faMastodon, faYoutube);
 
 const metadataBase = process.env.CONTEXT
   ? ({
