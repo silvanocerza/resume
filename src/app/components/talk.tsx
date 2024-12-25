@@ -1,21 +1,23 @@
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function Talk({
+export type TalkProps = {
+  name: string;
+  icon: IconProp;
+  link: string;
+  link_text: string;
+  date: string;
+  children?: React.ReactNode;
+};
+
+export function Talk({
   name,
   icon,
   link,
   link_text,
   date,
   children,
-}: {
-  name: string;
-  icon: IconProp;
-  link: string;
-  link_text: string;
-  date: string;
-  children?: React.ReactElement | string;
-}) {
+}: TalkProps) {
   return (
     <div className="flex flex-col">
       <div className="flex justify-between text-lg antialiased">
@@ -30,7 +32,9 @@ export default function Talk({
         <FontAwesomeIcon icon={icon} className="fa-fw" />
         {link_text}
       </a>
-      <div className="pb-1 pt-1 text-justify">{children}</div>
+      <div className="pb-1 pt-1 text-justify  whitespace-pre-wrap">
+        {children}
+      </div>
     </div>
   );
 }

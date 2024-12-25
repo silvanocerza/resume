@@ -1,46 +1,19 @@
-import SocialLink from "@/app/components/social-link";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { SocialLink, SocialLinkProps } from "@/app/components/social-link";
+import { config } from "@/app/lib/utils";
 
-interface Social {
-  icon: IconProp;
-  link: string;
-  link_text: string;
+function createSocialLink(social: SocialLinkProps) {
+  return (
+    <SocialLink
+      key={social.link}
+      icon={social.icon}
+      link={social.link}
+      link_text={social.link_text}
+    />
+  );
 }
 
 export default function Bio() {
-  const socials: Social[] = [
-    {
-      icon: ["fab", "github"],
-      link: "https://github.com/silvanocerza",
-      link_text: "/silvanocerza",
-    },
-    {
-      icon: ["fab", "linkedin"],
-      link: "https://www.linkedin.com/in/silvanocerza",
-      link_text: "/in/silvanocerza",
-    },
-    {
-      icon: ["fab", "bluesky"],
-      link: "https://bsky.app/profile/silvanocerza.bsky.social",
-      link_text: "/profile/silvanocerza.bsky.social",
-    },
-    {
-      icon: ["fab", "mastodon"],
-      link: "https://mastodon.world/@silvanocerza",
-      link_text: "@silvanocerza@mastodon.world",
-    },
-    {
-      icon: ["fas", "at"],
-      link: "mailto:silvanocerza@gmail.com",
-      link_text: "silvanocerza@gmail.com",
-    },
-    {
-      icon: ["fas", "globe"],
-      link: "https://silvanocerza.com",
-      link_text: "silvanocerza.com",
-    },
-  ];
-
+  const { socials, bio }: { socials: SocialLinkProps[]; bio: string } = config;
   return (
     <div>
       <div
@@ -64,27 +37,9 @@ export default function Bio() {
         </div>
       </div>
       <div className="flex flex-col gap-4">
-        <p className="text-justify">
-          I enjoy working on different platforms, technologies and solving tough
-          problems. I consider myself a generalist and am never scared to tackle
-          a new challenge using unknown languages or technology. It’s something
-          that I aim for since I believe it’s the best way to learn something
-          new, and that every problem requires the right tool to be solved the
-          best way possible. Some of the stuff I've done include CLIs in Go, web
-          apps and Open Source frameworks in Python, desktop and mobile apps in
-          Qt (C++ framework), Electron applications in Typescript and
-          Clojure/Script, enhance and evolve CI/CD infrastructure on CircleCI
-          and GitHub Workflows.
-        </p>
+        <p className="text-justify">{bio}</p>
         <div className="flex flex-row flex-wrap justify-evenly">
-          {socials.map(({ icon, link, link_text }) => (
-            <SocialLink
-              key={link}
-              icon={icon}
-              link={link}
-              link_text={link_text}
-            />
-          ))}
+          {socials.map(createSocialLink)}
         </div>
       </div>
     </div>

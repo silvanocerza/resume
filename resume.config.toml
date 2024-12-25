@@ -1,0 +1,301 @@
+bio = """
+I enjoy working on different platforms, technologies and solving tough
+problems. I consider myself a generalist and am never scared to tackle
+a new challenge using unknown languages or technology. It’s something
+that I aim for since I believe it’s the best way to learn something
+new, and that every problem requires the right tool to be solved the
+best way possible. Some of the stuff I've done include CLIs in Go, web
+apps and Open Source frameworks in Python, desktop and mobile apps in
+Qt (C++ framework), Electron applications in Typescript and
+Clojure/Script, enhance and evolve CI/CD infrastructure on CircleCI
+and GitHub Workflows.
+"""
+
+[[socials]]
+icon = ["fab", "github"]
+link = "https://github.com/silvanocerza"
+link_text = "/silvanocerza"
+
+[[socials]]
+icon = ["fab", "linkedin"]
+link = "https://www.linkedin.com/in/silvanocerza"
+link_text = "/in/silvanocerza"
+
+[[socials]]
+icon = ["fab", "bluesky"]
+link = "https://bsky.app/profile/silvanocerza.bsky.social"
+link_text = "/profile/silvanocerza.bsky.social"
+
+[[socials]]
+icon = ["fab", "mastodon"]
+link = "https://mastodon.world/@silvanocerza"
+link_text = "@silvanocerza@mastodon.world"
+
+[[socials]]
+icon = ["fas", "at"]
+link = "mailto:silvanocerza@gmail.com"
+link_text = "silvanocerza@gmail.com"
+
+[[socials]]
+icon = ["fas", "globe"]
+link = "https://silvanocerza.com"
+link_text = "silvanocerza.com"
+
+
+[[work_experience]]
+name = "Deepset"
+link = "https://www.deepset.ai/"
+link_text = "deepset.ai"
+start_date = "Jan 2023"
+technologies = ["Python", "GitHub Actions"]
+description = """
+I'm part of the Core Team and one of the main developer of Haystack \
+and related projects.
+Part of my time is also dedicated to all the stuff that managing an OS \
+project like Haystack entails, like triaging community issues and \
+giving support in the official community Discord.
+In my day to day work I develop new feature, squash bugs, enhance \
+release, testing, and CI processes. I also closely collaborate with \
+other companies engineers to integrate with their projects.
+"""
+
+[[work_experience]]
+name = "Pitch"
+link = "https://pitch.com"
+link_text = "pitch.com"
+start_date = "Apr 2022"
+end_date = "Sep 2022"
+technologies = ["Clojure", "ClojureScript", "Python", "CircleCI"]
+description = """
+I was part of the DevOps team and focused on CI, release management \
+and developers experience.
+Most of my time was spent enhancing and evolving our CircleCI \
+infrastructure, making the release process leaner and easier to \
+understand, building scripts and tools to enhance the day to day job \
+of other developers.
+I also contributed in small parts to the main product \
+application writing Clojure and ClojureScript.
+"""
+
+[[work_experience]]
+name = "Arduino"
+link = "https://arduino.cc/"
+link_text = "arduino.cc"
+start_date = "Jul 2020"
+end_date = "Mar 2022"
+technologies = ["Golang", "Python", "TypeScript", "GitHub Actions"]
+description = """
+I worked mainly on the ArduinoCLI, implementing new features, fixing \
+bugs and writing tests.
+I also took part on other minor supporting projects for the ArduinoCLI \
+like external libraries, GitHub Workflows Actions and similar things.
+Most of the times I managed the release process of the ArduinoCLI, \
+from triggering the build process to communicating with marketing for \
+social communications.
+"""
+
+[[work_experience]]
+name = "Molecular Horizon"
+link = "http://www.molhorizon.it/"
+link_text = "molhorizon.it"
+start_date = "Jul 2019"
+end_date = "Jul 2020"
+technologies = ["C++", "Qt", "QML", "Qt Quick", "GitHub Actions"]
+
+[[work_experience]]
+name = "Evonove"
+link = "https://evonove.it/"
+link_text = "evonove.it"
+start_date = "Feb 2015"
+end_date = "Jul 2019"
+technologies = ["Python", "Django", "C++", "Qt", "QML", "Qt Quick"]
+
+[[work_projects]]
+name = "Haystack"
+link = "https://github.com/deepset-ai/haystack"
+link_text = "/deepset-ai/haystack"
+icon = ["fab", "github"]
+technologies = ["Python", "GitHub Actions"]
+description = """
+Haystack is an Open Source LLM framework that allows you to build \
+applications powered by LLMs, Transformer models, vector search and \
+more.
+I'm one of the main developers. I took part in a major rewrite of the \
+project and heavily influenced architectural and design decisions.
+"""
+[[work_projects]]
+name = "Arduino CLI"
+link = "https://github.com/arduino/arduino-cli"
+link_text = "/arduino/arduino-cli"
+icon = ["fab", "github"]
+technologies = ["Golang", "Python", "gRPC", "Protobuf"]
+description = """
+Arduino CLI is a command line tool written in Go, it's used to manage \
+and install libraries, the tools necessary to compile and upload to \
+different Arduino boards, and several other things.
+Among its features it's also the backbone of the new Arduino IDE, \
+using a gRPC interface to communicate with each other.
+"""
+
+[[work_projects]]
+name = "Arduino IDE 2"
+link = "https://github.com/arduino/arduino-ide"
+link_text = "/arduino/arduino-ide"
+icon = ["fab", "github"]
+technologies = ["Node", "Electron", "React", "TypeScript", "Theia"]
+description = """
+Arduino IDE 2 is the new version of the famous Arduino IDE used by \
+millions of makers around the world.
+The new version has been rewritten from scratch using Electron and the \
+Theia framework. It uses the Arduino CLI internally to implement most \
+of its features.
+I implemented some minor feature, fix existing bugs, and handled \
+integration of new functionalities from the Arduino CLI.
+"""
+
+[[work_projects]]
+name = "Kibitzer"
+link = "http://www.moldiscovery.com/software/moka/"
+link_text = "moldiscovery.com/software/moka"
+icon = ["fas", "globe"]
+technologies = ["C", "C++", "Qt", "QML", "Qt Quick"]
+description = """
+Kibitzer is a desktop app to train computational models used to \
+predict molecules' pKa values.
+I integrated several C and C++ libraries in a multi threaded \
+model to parallelize their execution to speed up the statistical \
+computation for a better user experience.
+"""
+
+[[work_projects]]
+name = "Qnite"
+link = "https://github.com/evonove/qnite/"
+link_text = "/evonove/qnite/"
+icon = ["fab", "github"]
+technologies = ["C++", "Qt", "QML", "Qt Quick"]
+description = """
+An open source library to create charts declaratively in QML. \
+I contributed by adding several features like charts zoom and \
+bug fixing.
+"""
+
+[[work_projects]]
+name = "MKM SDK"
+link = "https://github.com/silvanocerza/mkm-sdk/"
+link_text = "/silvanocerza/mkm-sdk"
+icon = ["fab", "github"]
+technologies = ["Python", "OAuth"]
+description = """
+An open source SDK for Magic Card Market, uses reflection to \
+dinamically resolve the API endpoints.
+"""
+
+
+[[personal_projects]]
+name = "Caina"
+link = "https://github.com/silvanocerza/caina"
+link_text = "/silvanocerza/caina"
+icon = ["fab", "github"]
+technologies = ["Rust"]
+description = """
+Experimental Rust library implementing the BitTorrent protocol.
+"""
+
+
+[[personal_projects]]
+name = "graph-matplotlib"
+link = "https://github.com/silvanocerza/graph-matplotlib"
+link_text = "/silvanocerza/graph-matplotlib"
+icon = ["fab", "github"]
+technologies = ["Python", "Matplotlib"]
+description = """
+Experimental Python library that attempts to reimplement dagrejs \
+library, the backend library that's used by Mermaid to draw \
+flowcharts.
+"""
+
+
+[[personal_projects]]
+name = "Yellow Rats"
+link = "https://github.com/silvanocerza/yellow-rats"
+link_text = "/silvanocerza/yellow-rats"
+icon = ["fab", "github"]
+technologies = ["C++", "OpenCV", "ZBar", "CMake"]
+description = """
+A simple GUI written in C++ using OpenCV and ZBar, to scan and catalog \
+comics by number and quality.
+"""
+
+
+[[personal_projects]]
+name = "Datadog Agent"
+link = "https://github.com/DataDog/datadog-agent"
+link_text = "DataDog/datadog-agent"
+icon = ["fab", "github"]
+technologies = ["C", "C++", "CPython", "Go"]
+description = """
+I contributed to Six, a C++ wrapper around the CPython API supporting \
+multiple versions of Python that can be used by other languages like \
+Go.
+"""
+
+
+[[personal_projects]]
+name = "Bank Reader"
+link = "https://github.com/silvanocerza/bank-reader"
+link_text = "silvanocerza/bank-reader"
+icon = ["fab", "github"]
+technologies = ["Python", "Django", "Scrapy", "Lua", "Vue.js"]
+
+
+[[personal_projects]]
+name = "Cute Code Accessor"
+link = "https://github.com/silvanocerza/CuteCodeAccess"
+link_text = "silvanocerza/CuteCodeAccess"
+icon = ["fab", "github"]
+technologies = ["C++", "Unreal Engine"]
+
+
+[[personal_projects]]
+name = "Spectrum"
+link = "https://github.com/silvanocerza/spectrum"
+link_text = "silvanocerza/spectrum"
+icon = ["fab", "github"]
+technologies = ["Sass", "CSS", "Bulma", "Hugo"]
+
+
+[[personal_projects]]
+name = "This resume"
+link = "https://github.com/silvanocerza/resume"
+link_text = "silvanocerza/resume"
+icon = ["fab", "github"]
+technologies = ["React", "Next.js", "TailwindCSS", "TypeScript"]
+
+[[talks]]
+name = "Monitoring Open Source Success in Arduino"
+icon = ["fab", "youtube"]
+link = "https://www.youtube.com/watch?v=C4JxwgNnIWU"
+link_text = "/watch?v=C4JxwgNnIWU"
+date = "Oct 2021"
+description = """
+In this talk, I tell the story of how my team started using Datadog in \
+an unusual way to monitor the success of one of the most important of \
+its Open Source projects, the Arduino CLI, by gathering download \
+information from different sources and monitoring build failures. I \
+also explore some of the next steps we can take to gain insight into \
+our other projects.
+"""
+[[talks]]
+name = "Haystack 2.0: the story of a rewrite"
+icon = ["fab", "youtube"]
+link = "https://www.youtube.com/watch?v=0CNSvGlMNSo"
+link_text = "/watch?v=0CNSvGlMNSo"
+date = "Apr 2024"
+description = """
+This talk focuses on telling the story of the Haystack 2.0 rewrite \
+that I tackled together with my team. I show some of the pro and cons \
+of starting a rewrite. I also outline some important to do tasks that \
+must be taken into consideration when embarking the rewrite boat. In \
+the end I also present some differences between Haystack 1 and 2 to \
+show off the enhancement we could make because of the rewrite.
+"""

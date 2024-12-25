@@ -2,7 +2,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Tag from "@/app/components/tag";
 import React from "react";
 
-export default function Experience({
+export type ExperienceProps = {
+  name: string;
+  link: string;
+  link_text: string;
+  technologies: string[];
+  start_date: string;
+  end_date?: string;
+  children?: React.ReactNode;
+};
+
+export function Experience({
   name,
   link,
   link_text,
@@ -10,15 +20,7 @@ export default function Experience({
   start_date,
   end_date,
   children,
-}: {
-  name: string;
-  link: string;
-  link_text: string;
-  technologies: string[];
-  start_date: string;
-  end_date?: string;
-  children?: React.ReactNode | string;
-}) {
+}: ExperienceProps) {
   return (
     <div className="flex flex-col">
       <div className="flex justify-between text-lg antialiased">
@@ -35,7 +37,9 @@ export default function Experience({
         <FontAwesomeIcon icon={["fas", "globe"]} className="fa-fw" />{" "}
         {link_text}
       </a>
-      <div className="pb-1 pt-1 text-justify">{children}</div>
+      <div className="pb-1 pt-1 text-justify whitespace-pre-wrap">
+        {children}
+      </div>
 
       <div className="flex flex-wrap gap-x-2">
         {technologies.map((tech: string) => (

@@ -1,15 +1,13 @@
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function SocialLink({
-  icon,
-  link,
-  link_text,
-}: {
+export type SocialLinkProps = {
   icon: IconProp;
   link: string;
   link_text: string;
-}) {
+};
+
+export function SocialLink({ icon, link, link_text }: SocialLinkProps) {
   return (
     <div className="p-1 pt-0 pb-0">
       <a

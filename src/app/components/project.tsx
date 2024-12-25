@@ -3,21 +3,23 @@ import Tag from "@/app/components/tag";
 import React from "react";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
-export default function Project({
-  name,
-  icon,
-  link,
-  link_text,
-  technologies,
-  children,
-}: {
+export type ProjectProps = {
   name: string;
   icon: IconProp;
   link: string;
   link_text: string;
   technologies: string[];
   children?: React.ReactNode;
-}) {
+};
+
+export function Project({
+  name,
+  icon,
+  link,
+  link_text,
+  technologies,
+  children,
+}: ProjectProps) {
   return (
     <div className="flex flex-col">
       <div className="flex justify-between text-lg antialiased">
@@ -31,7 +33,9 @@ export default function Project({
         <FontAwesomeIcon icon={icon} className="fa-fw" />
         {link_text}
       </a>
-      <div className="pb-1 pt-1 text-justify">{children}</div>
+      <div className="pb-1 pt-1 text-justify  whitespace-pre-wrap">
+        {children}
+      </div>
 
       <div className="flex flex-wrap gap-x-2">
         {technologies.map((tech: string) => (
