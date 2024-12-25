@@ -27,7 +27,7 @@ export function Project({
     personal: ["fas", "user"],
   };
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col break-inside-avoid-column mb-4">
       <div className="flex items-center antialiased gap-2">
         <FontAwesomeIcon
           icon={type_icon[type]}

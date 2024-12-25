@@ -35,7 +35,7 @@ export default function Projects() {
       >
         Projects
       </h2>
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 print:grid-cols-2 ">
+      <div className="columns-1 md:columns-2 print:columns-2 gap-4">
         {projects.map(createProject)}
       </div>
     </div>
