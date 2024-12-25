@@ -42,7 +42,7 @@ link = "https://silvanocerza.com"
 link_text = "silvanocerza.com"
 
 
-[[work_experience]]
+[[work_experiences]]
 name = "Deepset"
 link = "https://www.deepset.ai/"
 link_text = "deepset.ai"
@@ -59,7 +59,7 @@ release, testing, and CI processes. I also closely collaborate with \
 other companies engineers to integrate with their projects.
 """
 
-[[work_experience]]
+[[work_experiences]]
 name = "Pitch"
 link = "https://pitch.com"
 link_text = "pitch.com"
@@ -77,7 +77,7 @@ I also contributed in small parts to the main product \
 application writing Clojure and ClojureScript.
 """
 
-[[work_experience]]
+[[work_experiences]]
 name = "Arduino"
 link = "https://arduino.cc/"
 link_text = "arduino.cc"
@@ -94,7 +94,7 @@ from triggering the build process to communicating with marketing for \
 social communications.
 """
 
-[[work_experience]]
+[[work_experiences]]
 name = "Molecular Horizon"
 link = "http://www.molhorizon.it/"
 link_text = "molhorizon.it"
@@ -102,7 +102,7 @@ start_date = "Jul 2019"
 end_date = "Jul 2020"
 technologies = ["C++", "Qt", "QML", "Qt Quick", "GitHub Actions"]
 
-[[work_experience]]
+[[work_experiences]]
 name = "Evonove"
 link = "https://evonove.it/"
 link_text = "evonove.it"
@@ -110,8 +110,10 @@ start_date = "Feb 2015"
 end_date = "Jul 2019"
 technologies = ["Python", "Django", "C++", "Qt", "QML", "Qt Quick"]
 
-[[work_projects]]
+
+[[projects]]
 name = "Haystack"
+type = "work"
 link = "https://github.com/deepset-ai/haystack"
 link_text = "/deepset-ai/haystack"
 icon = ["fab", "github"]
@@ -123,8 +125,9 @@ more.
 I'm one of the main developers. I took part in a major rewrite of the \
 project and heavily influenced architectural and design decisions.
 """
-[[work_projects]]
+[[projects]]
 name = "Arduino CLI"
+type = "work"
 link = "https://github.com/arduino/arduino-cli"
 link_text = "/arduino/arduino-cli"
 icon = ["fab", "github"]
@@ -137,8 +140,9 @@ Among its features it's also the backbone of the new Arduino IDE, \
 using a gRPC interface to communicate with each other.
 """
 
-[[work_projects]]
+[[projects]]
 name = "Arduino IDE 2"
+type = "work"
 link = "https://github.com/arduino/arduino-ide"
 link_text = "/arduino/arduino-ide"
 icon = ["fab", "github"]
@@ -153,8 +157,9 @@ I implemented some minor feature, fix existing bugs, and handled \
 integration of new functionalities from the Arduino CLI.
 """
 
-[[work_projects]]
+[[projects]]
 name = "Kibitzer"
+type = "work"
 link = "http://www.moldiscovery.com/software/moka/"
 link_text = "moldiscovery.com/software/moka"
 icon = ["fas", "globe"]
@@ -167,8 +172,9 @@ model to parallelize their execution to speed up the statistical \
 computation for a better user experience.
 """
 
-[[work_projects]]
+[[projects]]
 name = "Qnite"
+type = "work"
 link = "https://github.com/evonove/qnite/"
 link_text = "/evonove/qnite/"
 icon = ["fab", "github"]
@@ -179,8 +185,9 @@ I contributed by adding several features like charts zoom and \
 bug fixing.
 """
 
-[[work_projects]]
+[[projects]]
 name = "MKM SDK"
+type = "work"
 link = "https://github.com/silvanocerza/mkm-sdk/"
 link_text = "/silvanocerza/mkm-sdk"
 icon = ["fab", "github"]
@@ -191,8 +198,9 @@ dinamically resolve the API endpoints.
 """
 
 
-[[personal_projects]]
+[[projects]]
 name = "Caina"
+type = "personal"
 link = "https://github.com/silvanocerza/caina"
 link_text = "/silvanocerza/caina"
 icon = ["fab", "github"]
@@ -202,8 +210,9 @@ Experimental Rust library implementing the BitTorrent protocol.
 """
 
 
-[[personal_projects]]
+[[projects]]
 name = "graph-matplotlib"
+type = "personal"
 link = "https://github.com/silvanocerza/graph-matplotlib"
 link_text = "/silvanocerza/graph-matplotlib"
 icon = ["fab", "github"]
@@ -215,8 +224,9 @@ flowcharts.
 """
 
 
-[[personal_projects]]
+[[projects]]
 name = "Yellow Rats"
+type = "personal"
 link = "https://github.com/silvanocerza/yellow-rats"
 link_text = "/silvanocerza/yellow-rats"
 icon = ["fab", "github"]
@@ -227,8 +237,9 @@ comics by number and quality.
 """
 
 
-[[personal_projects]]
+[[projects]]
 name = "Datadog Agent"
+type = "personal"
 link = "https://github.com/DataDog/datadog-agent"
 link_text = "DataDog/datadog-agent"
 icon = ["fab", "github"]
@@ -240,36 +251,41 @@ Go.
 """
 
 
-[[personal_projects]]
+[[projects]]
 name = "Bank Reader"
+type = "personal"
 link = "https://github.com/silvanocerza/bank-reader"
 link_text = "silvanocerza/bank-reader"
 icon = ["fab", "github"]
 technologies = ["Python", "Django", "Scrapy", "Lua", "Vue.js"]
 
 
-[[personal_projects]]
+[[projects]]
 name = "Cute Code Accessor"
+type = "personal"
 link = "https://github.com/silvanocerza/CuteCodeAccess"
 link_text = "silvanocerza/CuteCodeAccess"
 icon = ["fab", "github"]
 technologies = ["C++", "Unreal Engine"]
 
 
-[[personal_projects]]
+[[projects]]
 name = "Spectrum"
+type = "personal"
 link = "https://github.com/silvanocerza/spectrum"
 link_text = "silvanocerza/spectrum"
 icon = ["fab", "github"]
 technologies = ["Sass", "CSS", "Bulma", "Hugo"]
 
 
-[[personal_projects]]
+[[projects]]
 name = "This resume"
+type = "personal"
 link = "https://github.com/silvanocerza/resume"
 link_text = "silvanocerza/resume"
 icon = ["fab", "github"]
 technologies = ["React", "Next.js", "TailwindCSS", "TypeScript"]
+
 
 [[talks]]
 name = "Monitoring Open Source Success in Arduino"
@@ -285,6 +301,8 @@ information from different sources and monitoring build failures. I \
 also explore some of the next steps we can take to gain insight into \
 our other projects.
 """
+
+
 [[talks]]
 name = "Haystack 2.0: the story of a rewrite"
 icon = ["fab", "youtube"]

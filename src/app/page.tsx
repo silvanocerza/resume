@@ -1,7 +1,6 @@
 import Bio from "@/app/ui/bio";
 import WorkExperience from "@/app/ui/work-experience";
-import WorkProjects from "./ui/work-projects";
-import PersonalProjects from "./ui/personal-projects";
+import Projects from "@/app/ui/projects";
 import Talks from "@/app/ui/talks";
 
 export default function Home() {
@@ -9,9 +8,8 @@ export default function Home() {
     <div className="flex flex-col gap-4">
       <Bio />
       <WorkExperience />
-      <WorkProjects />
+      <Projects />
       <Talks />
-      <PersonalProjects />
     </div>
   );
 }

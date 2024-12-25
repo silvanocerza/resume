@@ -2,7 +2,13 @@ import type { Metadata } from "next";
 import Download from "@/app/ui/download";
 import "./globals.css";
 import { config, library } from "@fortawesome/fontawesome-svg-core";
-import { faGlobe, faAt, faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGlobe,
+  faAt,
+  faFilePdf,
+  faBriefcase,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faBluesky,
@@ -13,7 +19,7 @@ import {
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
 config.autoAddCss = false;
-library.add(faGlobe, faAt, faFilePdf);
+library.add(faGlobe, faAt, faFilePdf, faBriefcase, faUser);
 library.add(faGithub, faBluesky, faLinkedin, faMastodon, faYoutube);
 
 const metadataBase = process.env.CONTEXT

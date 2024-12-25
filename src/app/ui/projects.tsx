@@ -8,6 +8,7 @@ function createProject(project: ProjectData) {
     <Project
       key={project.name}
       name={project.name}
+      type={project.type}
       icon={project.icon}
       link={project.link}
       link_text={project.link_text}
@@ -18,8 +19,8 @@ function createProject(project: ProjectData) {
   );
 }
 
-export default function WorkProjects() {
-  const { work_projects }: { work_projects: ProjectData[] } = config;
+export default function Projects() {
+  const { projects }: { projects: ProjectData[] } = config;
   return (
     <div>
       <h2
@@ -32,10 +33,10 @@ export default function WorkProjects() {
       border-b-2
       border-green-600"
       >
-        Work Projects
+        Projects
       </h2>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 print:grid-cols-2 ">
-        {work_projects.map(createProject)}
+        {projects.map(createProject)}
       </div>
     </div>
   );

@@ -22,13 +22,13 @@ function createExperience(exp: ExperienceData) {
 }
 
 export default function WorkExperience() {
-  const { work_experience }: { work_experience: ExperienceData[] } = config;
+  const { work_experiences }: { work_experiences: ExperienceData[] } = config;
   // Experiences with description take more space so we render them first.
   // Then we render the rest of the experiences three by three.
-  const experiencesWithDesc: ExperienceData[] = work_experience.filter(
+  const experiencesWithDesc: ExperienceData[] = work_experiences.filter(
     (exp) => exp.description,
   );
-  const experiencesWithoutDesc: ExperienceData[][] = work_experience
+  const experiencesWithoutDesc: ExperienceData[][] = work_experiences
     .filter((exp) => !exp.description)
     .reduce((acc, _, index, array) => {
       if (index % 3 === 0) {

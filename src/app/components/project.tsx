@@ -5,6 +5,7 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 export type ProjectProps = {
   name: string;
+  type: "work" | "personal";
   icon: IconProp;
   link: string;
   link_text: string;
@@ -14,16 +15,25 @@ export type ProjectProps = {
 
 export function Project({
   name,
+  type,
   icon,
   link,
   link_text,
   technologies,
   children,
 }: ProjectProps) {
+  const type_icon: { [key: string]: IconProp } = {
+    work: ["fas", "briefcase"],
+    personal: ["fas", "user"],
+  };
   return (
     <div className="flex flex-col">
-      <div className="flex justify-between text-lg antialiased">
-        <h4 className="font-bold">{name}</h4>
+      <div className="flex items-center antialiased gap-2">
+        <FontAwesomeIcon
+          icon={type_icon[type]}
+          className="text-gray-300 whitespace-nowrap"
+        />
+        <h4 className="font-bold text-lg">{name}</h4>
       </div>
 
       <a
