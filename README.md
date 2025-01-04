@@ -19,8 +19,6 @@ It's not necessary to commit the PDF file as it's generated on the fly each time
 
 To add new experiences, projects or talks edit the `resume.config.toml` file.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
 ## Deploy
 
 To deploy just push to `master`. Netlify will take care of the rest.
