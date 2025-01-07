@@ -41,7 +41,7 @@ export function Experience({
         {children}
       </div>
 
-      <div className="flex flex-wrap gap-x-2">
+      <div className="flex flex-wrap gap-2">
         {technologies.map((tech: string) => (
           <Tag key={tech}>{tech}</Tag>
         ))}
