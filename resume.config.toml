@@ -47,15 +47,16 @@ name = "Deepset"
 link = "https://www.deepset.ai/"
 link_text = "deepset.ai"
 start_date = "Jan 2023"
+end_date = "Dec 2024"
 technologies = ["Python", "GitHub Actions"]
 description = """
-I'm part of the Core Team and one of the main developer of Haystack \
+I was part of the Core Team and one of the main developer of Haystack \
 and related projects.
-Part of my time is also dedicated to all the stuff that managing an OS \
-project like Haystack entails, like triaging community issues and \
+Part of my time was also dedicated to all the stuff that managing an OS \
+project similar to Haystack entails, like triaging community issues and \
 giving support in the official community Discord.
-In my day to day work I develop new feature, squash bugs, enhance \
-release, testing, and CI processes. I also closely collaborate with \
+In my day to day work I developed new feature, squashed bugs, enhanced \
+release, testing, and CI processes. I also closely collaborated with \
 other companies engineers to integrate with their projects.
 """
 
@@ -122,9 +123,24 @@ description = """
 Haystack is an Open Source LLM framework that allows you to build \
 applications powered by LLMs, Transformer models, vector search and \
 more.
-I'm one of the main developers. I took part in a major rewrite of the \
+I was one of the main developers. I took part in a major rewrite of the \
 project and heavily influenced architectural and design decisions.
 """
+
+[[projects]]
+name = "OrchestrIA"
+type = "personal"
+link = "https://github.com/orchestria/orchestria"
+link_text = "/orchestria/orchestria"
+icon = ["fab", "github"]
+technologies = ["Python"]
+description = """
+A versatile agent orchestrator written in Python.
+Configurable from the command line and with a YAML manifest. \
+Makes it easy to create tools from existing command line tools.
+"""
+
+
 [[projects]]
 name = "Arduino CLI"
 type = "work"
@@ -173,19 +189,6 @@ computation for a better user experience.
 """
 
 [[projects]]
-name = "Qnite"
-type = "work"
-link = "https://github.com/evonove/qnite/"
-link_text = "/evonove/qnite/"
-icon = ["fab", "github"]
-technologies = ["C++", "Qt", "QML", "Qt Quick"]
-description = """
-An open source library to create charts declaratively in QML. \
-I contributed by adding several features like charts zoom and \
-bug fixing.
-"""
-
-[[projects]]
 name = "MKM SDK"
 type = "work"
 link = "https://github.com/silvanocerza/mkm-sdk/"
@@ -211,33 +214,6 @@ Experimental Rust library implementing the BitTorrent protocol.
 
 
 [[projects]]
-name = "graph-matplotlib"
-type = "personal"
-link = "https://github.com/silvanocerza/graph-matplotlib"
-link_text = "/silvanocerza/graph-matplotlib"
-icon = ["fab", "github"]
-technologies = ["Python", "Matplotlib"]
-description = """
-Experimental Python library that attempts to reimplement dagrejs \
-library, the backend library that's used by Mermaid to draw \
-flowcharts.
-"""
-
-
-[[projects]]
-name = "Yellow Rats"
-type = "personal"
-link = "https://github.com/silvanocerza/yellow-rats"
-link_text = "/silvanocerza/yellow-rats"
-icon = ["fab", "github"]
-technologies = ["C++", "OpenCV", "ZBar", "CMake"]
-description = """
-A simple GUI written in C++ using OpenCV and ZBar, to scan and catalog \
-comics by number and quality.
-"""
-
-
-[[projects]]
 name = "Datadog Agent"
 type = "personal"
 link = "https://github.com/DataDog/datadog-agent"
@@ -250,32 +226,34 @@ multiple versions of Python that can be used by other languages like \
 Go.
 """
 
-
 [[projects]]
-name = "Bank Reader"
+name = "Obsidian GitHub Sync"
 type = "personal"
-link = "https://github.com/silvanocerza/bank-reader"
-link_text = "silvanocerza/bank-reader"
+link = "https://github.com/silvanocerza/obsidian-github-sync"
+link_text = "silvanocerza/obsidian-github-sync"
 icon = ["fab", "github"]
-technologies = ["Python", "Django", "Scrapy", "Lua", "Vue.js"]
-
-
-[[projects]]
-name = "Cute Code Accessor"
-type = "personal"
-link = "https://github.com/silvanocerza/CuteCodeAccess"
-link_text = "silvanocerza/CuteCodeAccess"
-icon = ["fab", "github"]
-technologies = ["C++", "Unreal Engine"]
+description = """
+A plugin for Obsidian that syncs your notes with a GitHub repository \
+and viceversa. Uses the GitHub REST API to sync instead of git to \
+make it as compatible as possible with mobile devices and other \
+devices that don't have git installed.
+"""
+technologies = ["TypeScript", "Node", "GitHub Rest API"]
 
 
 [[projects]]
-name = "Spectrum"
+name = "Home Server Services"
 type = "personal"
-link = "https://github.com/silvanocerza/spectrum"
-link_text = "silvanocerza/spectrum"
+link = "https://github.com/silvanocerza/personal-services"
+link_text = "silvanocerza/personal-services"
 icon = ["fab", "github"]
-technologies = ["Sass", "CSS", "Bulma", "Hugo"]
+description = """
+A collection of services running on my small home server.
+Uses Traefik as an app proxy and Docker Compose to manage the \
+services. Most services are exposed to the local network that \
+I can access anywhere through a WireGuard tunnel and custom DNS.
+"""
+technologies = ["Docker", "Traefik", "WireGuard"]
 
 
 [[projects]]
@@ -284,7 +262,18 @@ type = "personal"
 link = "https://github.com/silvanocerza/resume"
 link_text = "silvanocerza/resume"
 icon = ["fab", "github"]
-technologies = ["React", "Next.js", "TailwindCSS", "TypeScript"]
+description = """
+This resume is built in Next.js and TailwindCSS and exported to PDF \
+at build time in Vercel.
+"""
+technologies = [
+    "React",
+    "Next.js",
+    "Vercel",
+    "TailwindCSS",
+    "TypeScript",
+    "Node",
+]
 
 
 [[talks]]
