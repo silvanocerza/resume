@@ -1,9 +1,7 @@
-import { Builder, Browser } from "selenium-webdriver";
-import chrome from "selenium-webdriver/chrome";
+import puppeteer, { Browser } from "puppeteer-core";
+import chromium from "@sparticuz/chromium";
 import { spawn, spawnSync } from "child_process";
 import path from "path";
-import CDP from "chrome-remote-interface";
-import fs from "fs";
 
 function findPython(): string | null {
   if (spawnSync("python", ["--version"]).status === 0) {
@@ -38,33 +36,44 @@ function findPython(): string | null {
     console.error(`Server error: ${err}`);
   });
 
-  let driver: chrome.Driver | null = null;
+  let browser: Browser | null = null;
   try {
-    const debugPort = 9222;
-    const options = new chrome.Options();
-    options.addArguments("--headless");
-    options.addArguments(`--remote-debugging-port=${debugPort}`);
-    driver = (await new Builder()
-      .forBrowser(Browser.CHROME)
-      .setChromeOptions(options)
-      .build()) as chrome.Driver;
-    const client = await CDP({ port: debugPort, host: "localhost" });
-    await driver.get(`http://localhost:${serverPort}`);
-    const printOptions = {
-      // It's A4 in stupid imperial units
-      paperWidth: 8.27,
-      paperHeight: 11.7,
+    browser = await puppeteer.launch({
+      args: chromium.args,
+      executablePath: await chromium.executablePath(),
+      headless: true,
+    });
+    const page = await browser.newPage();
+    await page.goto(`http://localhost:${serverPort}`);
+    await page.pdf({
+      path: path.join(outPath, "SilvanoCerzaResume.pdf"),
+      format: "A4",
       displayHeaderFooter: false,
       preferCSSPageSize: true,
-    };
-    const res = await client.Page.printToPDF(printOptions);
-    const buffer = Buffer.from(res.data, "base64");
-    fs.writeFileSync(path.join(outPath, "SilvanoCerzaResume.pdf"), buffer);
+      printBackground: true,
+      // These are the default margins in Chrome
+      margin: {
+        top: "0.4in",
+        right: "0.4in",
+        bottom: "0.4in",
+        left: "0.4in",
+      },
+    });
+    await browser.close();
+  } catch (err: any) {
+    console.error(
+      "Error:",
+      err,
+      "\nStack:",
+      err.stack,
+      "\nDetails:",
+      JSON.stringify(err, null, 2),
+    );
   } finally {
     // Creation might fail, always check before quitting or we risk
     // not closing the server
-    if (driver) {
-      await driver.quit();
+    if (browser) {
+      await browser.close();
     }
     server.kill();
   }
