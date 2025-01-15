@@ -22,16 +22,7 @@ config.autoAddCss = false;
 library.add(faGlobe, faAt, faFilePdf, faBriefcase, faUser);
 library.add(faGithub, faBluesky, faLinkedin, faMastodon, faYoutube);
 
-const metadataBase = process.env.CONTEXT
-  ? ({
-      production: process.env.URL,
-      "branch-deploy": process.env.DEPLOY_PRIME_URL,
-      "deploy-preview": process.env.DEPLOY_PRIME_URL,
-    }[process.env.CONTEXT] ?? "")
-  : "http://localhost:3000";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(metadataBase),
   title: "Silvano Cerza — Software Engineer",
   description:
     "Hey! I'm Silvano, a Software Engineer, and this is my resume. Feel free to take a look at it. :)",
