@@ -37,7 +37,7 @@ export default function Bio() {
         </div>
       </div>
       <div className="flex flex-col gap-4">
-        <p className="text-justify">{bio}</p>
+        <p className="text-justify whitespace-pre-wrap">{bio}</p>
         <div className="flex flex-row flex-wrap justify-evenly">
           {socials.map(createSocialLink)}
         </div>
