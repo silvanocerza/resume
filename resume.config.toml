@@ -1,13 +1,22 @@
 bio = """
-I enjoy working on different platforms, technologies and solving tough
-problems. I'm never scared to tackle a new challenge using unknown
-technologies or languages.
-Having worked on a variety of projects and roles, I've learned to always
-take into consideration how technical decisions can impact the end user.
-I'm comfortable in high agency roles that let me work on projects from
-concept to delivery working across the stack and taking into consideration
-all the requirements of a product.
-I thrive in fast-paced startups where I can have a deep impact on the product.
+I'm a software engineer with 10 years of experience. I'm a generalist, though I have more experience with \
+Python, Go, C++, and TypeScript.
+At Deepset, as one of the main developer of Haystack, one of most used AI frameworks, I led major architectural \
+decisions during its rewrite for the 2.0 major release. I was also the one responsible of the \
+release and testing processes and the CI infrastructure, both for the main project and the monorepo \
+containing all the Haystack integrations. While there I fully automated the release process and overhauled \
+testing to cut the PRs lead time.
+At Pitch I was part of the DevOps team and responsible for the release process. I changed it from top to bottom \
+to enhance the user experience for developers and customers, including the notification UI shown to the end user. \
+Together with the rest of the team I was also owner of the CI processes used by all the other teams and \
+responsible of enhancing its developer experience.
+At Arduino, I was a key developer of the Arduino CLI and contributed to Arduino IDE 2. There too I handled \
+the build and release process and the CI infrastructure. I created the release and notarization \
+process for the Arduino CLI for MacOS.
+At Molecular Horizon I worked on several desktop application for medicinal chemists. \
+While there I also took lead and ownership of a modernization project to move the build systems \
+of the whole company, and a closely collaborating other company, from BitBucket and BuildBot to GitHub Actions.
+I'm also an Open Source enthusiast and maintain and contribute to different projects. Occasionally I talk at conferences.
 """
 
 [[socials]]
@@ -85,11 +94,10 @@ start_date = "Jul 2020"
 end_date = "Mar 2022"
 technologies = ["Golang", "Python", "TypeScript", "GitHub Actions"]
 description = """
-I worked mainly on the ArduinoCLI, implementing new features, fixing \
-bugs and writing tests.
-I also took part on other minor supporting projects for the ArduinoCLI \
-like external libraries, GitHub Workflows Actions and similar things.
-Most of the times I managed the release process of the ArduinoCLI, \
+I worked mainly on the Arduino CLI, implementing new features, fixing \
+bugs and writing tests. I also contributed to the Arduino IDE to \
+integrate it with the CLI.
+I also managed the release process of the Arduino CLI, \
 from triggering the build process to communicating with marketing for \
 social communications.
 """
