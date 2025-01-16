@@ -37,7 +37,7 @@ export default function WorkExperience() {
       return acc;
     }, [] as ExperienceData[][]);
   return (
-    <div className="print:break-after-page">
+    <div>
       <h2
         className="
       text-2xl
@@ -50,7 +50,7 @@ export default function WorkExperience() {
       >
         Work Experience
       </h2>
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 print:grid-cols-2 ">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 print:grid-cols-2">
         {experiencesWithDesc.map(createExperience)}
 
         {experiencesWithoutDesc.map((exps: ExperienceData[], index: number) => (

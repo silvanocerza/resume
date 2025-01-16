@@ -22,7 +22,7 @@ export function Experience({
   children,
 }: ExperienceProps) {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col print:break-inside-avoid">
       <div className="flex justify-between text-lg antialiased">
         <h4 className="font-bold">{name}</h4>
         <p className="font-extrabold text-gray-300 whitespace-nowrap">
