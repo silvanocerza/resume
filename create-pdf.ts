@@ -1,5 +1,4 @@
-import puppeteer, { Browser } from "puppeteer-core";
-import chromium from "@sparticuz/chromium";
+import type { Browser } from "puppeteer";
 import { spawn, spawnSync } from "child_process";
 import path from "path";
 
@@ -11,6 +10,16 @@ function findPython(): string | null {
   }
   return null;
 }
+
+const IS_VERCEL = process.env.VERCEL === "1";
+
+const getPuppeteer = async () => {
+  return IS_VERCEL ? await import("puppeteer-core") : await import("puppeteer");
+};
+
+const getChromium = async () => {
+  return IS_VERCEL ? (await import("@sparticuz/chromium")).default : null;
+};
 
 (async function createPdf() {
   const root = path.dirname(__filename);
@@ -38,11 +47,23 @@ function findPython(): string | null {
 
   let browser: Browser | null = null;
   try {
-    browser = await puppeteer.launch({
-      args: chromium.args,
-      executablePath: await chromium.executablePath(),
-      headless: true,
-    });
+    const puppeteer = await getPuppeteer();
+    const chromium = await getChromium();
+    const launchArgs: {
+      args?: string[];
+      executablePath?: string;
+      headless: true;
+    } = IS_VERCEL
+      ? {
+          args: chromium!.args,
+          executablePath: await chromium!.executablePath(),
+          headless: true,
+        }
+      : {
+          headless: true,
+        };
+
+    browser = (await puppeteer.launch(launchArgs)) as Browser;
     const page = await browser.newPage();
     await page.goto(`http://localhost:${serverPort}`);
     await page.pdf({
