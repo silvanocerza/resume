@@ -1,22 +1,8 @@
 bio = """
-I'm a software engineer with 10 years of experience. I'm a generalist, though I have more experience with \
-Python, Go, C++, and TypeScript.
-At Deepset, as one of the main developer of Haystack, one of most used AI frameworks, I led major architectural \
-decisions during its rewrite for the 2.0 major release. I was also the one responsible of the \
-release and testing processes and the CI infrastructure, both for the main project and the monorepo \
-containing all the Haystack integrations. While there I fully automated the release process and overhauled \
-testing to cut the PRs lead time.
-At Pitch I was part of the DevOps team and responsible for the release process. I changed it from top to bottom \
-to enhance the user experience for developers and customers, including the notification UI shown to the end user. \
-Together with the rest of the team I was also owner of the CI processes used by all the other teams and \
-responsible of enhancing its developer experience.
-At Arduino, I was a key developer of the Arduino CLI and contributed to Arduino IDE 2. There too I handled \
-the build and release process and the CI infrastructure. I created the release and notarization \
-process for the Arduino CLI for MacOS.
-At Molecular Horizon I worked on several desktop application for medicinal chemists. \
-While there I also took lead and ownership of a modernization project to move the build systems \
-of the whole company, and a closely collaborating other company, from BitBucket and BuildBot to GitHub Actions.
-I'm also an Open Source enthusiast and maintain and contribute to different projects. Occasionally I talk at conferences.
+I'm a software engineer based in Matera, Italy and have 10 years of experience. I've been working remotely since 8 years.\
+I'm a generalist, though I have more experience with Python. \
+I'm an Open Source enthusiast and maintain and contribute to different projects. Occasionally I talk at conferences \
+like DataDog DASH and PyCon DE, and local meetups.
 """
 
 [[socials]]
@@ -58,14 +44,13 @@ start_date = "Jan 2023"
 end_date = "Dec 2024"
 technologies = ["Python", "GitHub Actions"]
 description = """
-I was part of the Core Team and one of the main developer of Haystack \
-and related projects.
-Part of my time was also dedicated to all the stuff that managing an OS \
-project similar to Haystack entails, like triaging community issues and \
-giving support in the official community Discord.
-In my day to day work I developed new feature, squashed bugs, enhanced \
-release, testing, and CI processes. I also closely collaborated with \
-other companies engineers to integrate with their projects.
+At Deepset, I was one of the key developers of Haystack, one of the most widely used AI frameworks \
+for building Retrieval-Augmented Generation (RAG) and agent applications. During my tenure, \
+I was responsible for leading major architectural decisions during the platform's rewrite for the 2.0 release. \
+I developed the core execution logic of the library, enabling the efficient creation of agents, \
+which contributed to an increase in our user base and client acquisition. \
+Additionally, I significantly overhauled the CI processes, reducing run time and minimizing the \
+need for human intervention, thus streamlining the deployment of critical fixes.
 """
 
 [[work_experiences]]
@@ -76,14 +61,11 @@ start_date = "Apr 2022"
 end_date = "Sep 2022"
 technologies = ["Clojure", "ClojureScript", "Python", "CircleCI"]
 description = """
-I was part of the DevOps team and focused on CI, release management \
-and developers experience.
-Most of my time was spent enhancing and evolving our CircleCI \
-infrastructure, making the release process leaner and easier to \
-understand, building scripts and tools to enhance the day to day job \
-of other developers.
-I also contributed in small parts to the main product \
-application writing Clojure and ClojureScript.
+At Pitch, I was a member of the DevOps team, responsible for overseeing the entire release process, \
+which I significantly simplified to enhance both the DevEx and the UX for end users, \
+resulting in more frequent updates to the latest version of the app. \
+Together with my team, I also owned the testing processes in CircleCI, focusing on improving the DevEx for other teams. \
+Additionally, I contributed to the main product application by writing code in Clojure and ClojureScript.
 """
 
 [[work_experiences]]
@@ -94,12 +76,9 @@ start_date = "Jul 2020"
 end_date = "Mar 2022"
 technologies = ["Golang", "Python", "TypeScript", "GitHub Actions"]
 description = """
-I worked mainly on the Arduino CLI, implementing new features, fixing \
-bugs and writing tests. I also contributed to the Arduino IDE to \
-integrate it with the CLI.
-I also managed the release process of the Arduino CLI, \
-from triggering the build process to communicating with marketing for \
-social communications.
+At Arduino, I was a key developer of the Arduino CLI and contributed to Arduino IDE 2. \
+In this role, I managed the build and release processes, as well as the CI infrastructure. \
+Additionally, I developed the release and notarization process for the Arduino CLI on macOS.
 """
 
 [[work_experiences]]
@@ -109,15 +88,12 @@ link_text = "molhorizon.it"
 start_date = "Jul 2019"
 end_date = "Jul 2020"
 technologies = ["C++", "Qt", "QML", "Qt Quick", "GitHub Actions"]
-
-[[work_experiences]]
-name = "Evonove"
-link = "https://evonove.it/"
-link_text = "evonove.it"
-start_date = "Feb 2015"
-end_date = "Jul 2019"
-technologies = ["Python", "Django", "C++", "Qt", "QML", "Qt Quick"]
-
+description = """
+At Molecular Horizon, I contributed to several desktop applications for medicinal chemists. \
+During my time there, I took the lead and ownership of a modernization project to transition \
+the company's entire build system, as well as that of a closely collaborating partner company, \
+from Bitbucket and BuildBot—managed by a single individual—to GitHub Actions, accessible to all developers.
+"""
 
 [[projects]]
 name = "Haystack"
@@ -223,8 +199,8 @@ Experimental Rust library implementing the BitTorrent protocol.
 [[projects]]
 name = "Datadog Agent"
 type = "personal"
-link = "https://github.com/DataDog/datadog-agent"
-link_text = "DataDog/datadog-agent"
+link = "https://github.com/DataDog/datadog-agent/commits/main/?author=silvanocerza"
+link_text = "DataDog/datadog-agent/commits/main/?author=silvanocerza"
 icon = ["fab", "github"]
 technologies = ["C", "C++", "CPython", "Go"]
 description = """
