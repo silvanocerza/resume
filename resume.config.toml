@@ -193,7 +193,7 @@ An experimental Rust library implementing the BitTorrent protocol.
 name = "Datadog Agent"
 type = "personal"
 link = "https://github.com/DataDog/datadog-agent/commits/main/?author=silvanocerza"
-link_text = "DataDog/datadog-agent/commits/main/?author=silvanocerza"
+link_text = "/DataDog/datadog-agent/commits/main/?author=silvanocerza"
 icon = ["fab", "github"]
 technologies = ["C", "C++", "CPython", "Go"]
 description = """
@@ -206,7 +206,7 @@ Go.
 name = "Obsidian GitHub Sync"
 type = "personal"
 link = "https://github.com/silvanocerza/obsidian-github-sync"
-link_text = "silvanocerza/obsidian-github-sync"
+link_text = "/silvanocerza/obsidian-github-sync"
 icon = ["fab", "github"]
 description = """
 A plugin for Obsidian that syncs your notes with a GitHub repository \
@@ -219,7 +219,7 @@ technologies = ["TypeScript", "Node", "GitHub Rest API"]
 name = "Home Server Services"
 type = "personal"
 link = "https://github.com/silvanocerza/personal-services"
-link_text = "silvanocerza/personal-services"
+link_text = "/silvanocerza/personal-services"
 icon = ["fab", "github"]
 description = """
 A collection of services running on my small home server. \
@@ -233,7 +233,7 @@ technologies = ["Docker", "Traefik", "WireGuard"]
 name = "This Resume"
 type = "personal"
 link = "https://github.com/silvanocerza/resume"
-link_text = "silvanocerza/resume"
+link_text = "/silvanocerza/resume"
 icon = ["fab", "github"]
 description = """
 This resume is built with Next.js and Tailwind CSS, and it is exported to PDF \
