@@ -48,7 +48,7 @@ for building RAG and Agent applications. During my tenure, \
 I was responsible for leading significant architectural decisions during the platform's rewrite for the 2.0 release. \
 I developed the core execution logic of the library, enabling the efficient creation of agents, \
 which contributed to an increase in our user base and client acquisition. \
-Additionally, I significantly overhauled the CI processes, reducing runtime and minimizing the \
+Additionally, I significantly overhauled the CI processes, reducing tests runtime and minimizing the \
 need for human intervention, thus streamlining the deployment of critical fixes.
 """
 
