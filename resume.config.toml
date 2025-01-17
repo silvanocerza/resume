@@ -1,8 +1,8 @@
 bio = """
-I'm a software engineer based in Matera, Italy and have 10 years of experience. I've been working remotely since 8 years.\
-I'm a generalist, though I have more experience with Python. \
-I'm an Open Source enthusiast and maintain and contribute to different projects. Occasionally I talk at conferences \
-like DataDog DASH and PyCon DE, and local meetups.
+I'm a software engineer based in Matera, Italy, with 10 years of experience. I've been working remotely for the last 8 years.
+I'm a generalist, though I have more experience with Python.
+As an Open Source enthusiast, I maintain and contribute to various projects. Occasionally, I speak at conferences
+such as DataDog DASH and PyCon DE, as well as at local meetups.
 """
 
 [[socials]]
@@ -35,7 +35,6 @@ icon = ["fas", "globe"]
 link = "https://silvanocerza.com"
 link_text = "silvanocerza.com"
 
-
 [[work_experiences]]
 name = "Deepset"
 link = "https://www.deepset.ai/"
@@ -44,12 +43,12 @@ start_date = "Jan 2023"
 end_date = "Dec 2024"
 technologies = ["Python", "GitHub Actions"]
 description = """
-At Deepset, I was one of the key developers of Haystack, one of the most widely used AI frameworks \
-for building Retrieval-Augmented Generation (RAG) and agent applications. During my tenure, \
-I was responsible for leading major architectural decisions during the platform's rewrite for the 2.0 release. \
-I developed the core execution logic of the library, enabling the efficient creation of agents, \
-which contributed to an increase in our user base and client acquisition. \
-Additionally, I significantly overhauled the CI processes, reducing run time and minimizing the \
+At Deepset, I was one of the key developers of Haystack, one of the most widely used AI frameworks
+for building RAG and Agent applications. During my tenure,
+I was responsible for leading significant architectural decisions during the platform's rewrite for the 2.0 release.
+I developed the core execution logic of the library, enabling the efficient creation of agents,
+which contributed to an increase in our user base and client acquisition.
+Additionally, I significantly overhauled the CI processes, reducing runtime and minimizing the
 need for human intervention, thus streamlining the deployment of critical fixes.
 """
 
@@ -61,10 +60,10 @@ start_date = "Apr 2022"
 end_date = "Sep 2022"
 technologies = ["Clojure", "ClojureScript", "Python", "CircleCI"]
 description = """
-At Pitch, I was a member of the DevOps team, responsible for overseeing the entire release process, \
-which I significantly simplified to enhance both the DevEx and the UX for end users, \
-resulting in more frequent updates to the latest version of the app. \
-Together with my team, I also owned the testing processes in CircleCI, focusing on improving the DevEx for other teams. \
+At Pitch, I was a member of the DevOps team, responsible for overseeing the entire release process.
+I significantly simplified this process to enhance both the DevEx and the UX for end users,
+resulting in more frequent updates to the latest version of the app.
+Together with my team, I also managed the testing processes in CircleCI, focusing on improving the DevEx for other teams.
 Additionally, I contributed to the main product application by writing code in Clojure and ClojureScript.
 """
 
@@ -76,8 +75,8 @@ start_date = "Jul 2020"
 end_date = "Mar 2022"
 technologies = ["Golang", "Python", "TypeScript", "GitHub Actions"]
 description = """
-At Arduino, I was a key developer of the Arduino CLI and contributed to Arduino IDE 2. \
-In this role, I managed the build and release processes, as well as the CI infrastructure. \
+At Arduino, I was a key developer of the Arduino CLI and contributed to Arduino IDE 2.
+In this role, I managed the build and release processes, as well as the CI infrastructure.
 Additionally, I developed the release and notarization process for the Arduino CLI on macOS.
 """
 
@@ -89,9 +88,9 @@ start_date = "Jul 2019"
 end_date = "Jul 2020"
 technologies = ["C++", "Qt", "QML", "Qt Quick", "GitHub Actions"]
 description = """
-At Molecular Horizon, I contributed to several desktop applications for medicinal chemists. \
-During my time there, I took the lead and ownership of a modernization project to transition \
-the company's entire build system, as well as that of a closely collaborating partner company, \
+At Molecular Horizon, I contributed to several desktop applications for medicinal chemists.
+During my time there, I took the lead on a modernization project to transition
+the company's entire build system, as well as that of a closely collaborating partner company,
 from Bitbucket and BuildBot—managed by a single individual—to GitHub Actions, accessible to all developers.
 """
 
@@ -103,11 +102,10 @@ link_text = "/deepset-ai/haystack"
 icon = ["fab", "github"]
 technologies = ["Python", "GitHub Actions"]
 description = """
-Haystack is an Open Source LLM framework that allows you to build \
-applications powered by LLMs, Transformer models, vector search and \
-more.
-I was one of the main developers. I took part in a major rewrite of the \
-project and heavily influenced architectural and design decisions.
+Haystack is an Open Source LLM framework that allows you to build
+applications powered by LLMs, Transformer models, vector search, and more.
+I was one of the main developers and participated in a major rewrite of the
+project, heavily influencing architectural and design decisions.
 """
 
 [[projects]]
@@ -119,10 +117,9 @@ icon = ["fab", "github"]
 technologies = ["Python"]
 description = """
 A versatile agent orchestrator written in Python.
-Configurable from the command line and with a YAML manifest. \
-Makes it easy to create tools from existing command line tools.
+Configurable from the command line and with a YAML manifest, it
+facilitates the creation of tools from existing command-line utilities.
 """
-
 
 [[projects]]
 name = "Arduino CLI"
@@ -132,11 +129,11 @@ link_text = "/arduino/arduino-cli"
 icon = ["fab", "github"]
 technologies = ["Golang", "Python", "gRPC", "Protobuf"]
 description = """
-Arduino CLI is a command line tool written in Go, it's used to manage \
-and install libraries, the tools necessary to compile and upload to \
-different Arduino boards, and several other things.
-Among its features it's also the backbone of the new Arduino IDE, \
-using a gRPC interface to communicate with each other.
+Arduino CLI is a command-line tool written in Go, used to manage
+and install libraries, the tools necessary for compiling and uploading to
+different Arduino boards, and several other functions.
+Among its features, it also serves as the backbone of the new Arduino IDE,
+communicating through a gRPC interface.
 """
 
 [[projects]]
@@ -147,13 +144,13 @@ link_text = "/arduino/arduino-ide"
 icon = ["fab", "github"]
 technologies = ["Node", "Electron", "React", "TypeScript", "Theia"]
 description = """
-Arduino IDE 2 is the new version of the famous Arduino IDE used by \
-millions of makers around the world.
-The new version has been rewritten from scratch using Electron and the \
-Theia framework. It uses the Arduino CLI internally to implement most \
+Arduino IDE 2 is the latest version of the popular Arduino IDE used by
+millions of makers worldwide.
+This new version has been rewritten from scratch using Electron and the
+Theia framework. It utilizes Arduino CLI internally to implement most
 of its features.
-I implemented some minor feature, fix existing bugs, and handled \
-integration of new functionalities from the Arduino CLI.
+I implemented several minor features, fixed existing bugs, and handled
+the integration of new functionalities from the Arduino CLI.
 """
 
 [[projects]]
@@ -164,11 +161,10 @@ link_text = "moldiscovery.com/software/moka"
 icon = ["fas", "globe"]
 technologies = ["C", "C++", "Qt", "QML", "Qt Quick"]
 description = """
-Kibitzer is a desktop app to train computational models used to \
-predict molecules' pKa values.
-I integrated several C and C++ libraries in a multi threaded \
-model to parallelize their execution to speed up the statistical \
-computation for a better user experience.
+Kibitzer is a desktop application designed to train computational models used for
+predicting the pKa values of molecules.
+I integrated multiple C and C++ libraries in a multi-threaded
+environment to speed up statistical computations, thereby improving the user experience.
 """
 
 [[projects]]
@@ -179,10 +175,8 @@ link_text = "/silvanocerza/mkm-sdk"
 icon = ["fab", "github"]
 technologies = ["Python", "OAuth"]
 description = """
-An open source SDK for Magic Card Market, uses reflection to \
-dinamically resolve the API endpoints.
+An open-source SDK for Magic Card Market, using reflection to dynamically resolve API endpoints.
 """
-
 
 [[projects]]
 name = "Caina"
@@ -192,9 +186,8 @@ link_text = "/silvanocerza/caina"
 icon = ["fab", "github"]
 technologies = ["Rust"]
 description = """
-Experimental Rust library implementing the BitTorrent protocol.
+An experimental Rust library implementing the BitTorrent protocol.
 """
-
 
 [[projects]]
 name = "Datadog Agent"
@@ -204,8 +197,8 @@ link_text = "DataDog/datadog-agent/commits/main/?author=silvanocerza"
 icon = ["fab", "github"]
 technologies = ["C", "C++", "CPython", "Go"]
 description = """
-I contributed to Six, a C++ wrapper around the CPython API supporting \
-multiple versions of Python that can be used by other languages like \
+I contributed to 'Six', a C++ wrapper around the CPython API supporting
+multiple versions of Python that can be utilized by other languages such as
 Go.
 """
 
@@ -216,13 +209,11 @@ link = "https://github.com/silvanocerza/obsidian-github-sync"
 link_text = "silvanocerza/obsidian-github-sync"
 icon = ["fab", "github"]
 description = """
-A plugin for Obsidian that syncs your notes with a GitHub repository \
-and viceversa. Uses the GitHub REST API to sync instead of git to \
-make it as compatible as possible with mobile devices and other \
-devices that don't have git installed.
+A plugin for Obsidian that syncs your notes with a GitHub repository
+and vice versa. It uses the GitHub REST API for synchronization rather than git to
+maximize compatibility with mobile devices and other systems that do not have git installed.
 """
 technologies = ["TypeScript", "Node", "GitHub Rest API"]
-
 
 [[projects]]
 name = "Home Server Services"
@@ -232,32 +223,30 @@ link_text = "silvanocerza/personal-services"
 icon = ["fab", "github"]
 description = """
 A collection of services running on my small home server.
-Uses Traefik as an app proxy and Docker Compose to manage the \
-services. Most services are exposed to the local network that \
-I can access anywhere through a WireGuard tunnel and custom DNS.
+Utilizes Traefik as an application proxy and Docker Compose to manage the
+services. Most services are exposed to the local network, allowing access from
+anywhere via a WireGuard tunnel and custom DNS.
 """
 technologies = ["Docker", "Traefik", "WireGuard"]
 
-
 [[projects]]
-name = "This resume"
+name = "This Resume"
 type = "personal"
 link = "https://github.com/silvanocerza/resume"
 link_text = "silvanocerza/resume"
 icon = ["fab", "github"]
 description = """
-This resume is built in Next.js and TailwindCSS and exported to PDF \
+This resume is built with Next.js and Tailwind CSS, and it is exported to PDF
 at build time in Vercel.
 """
 technologies = [
     "React",
     "Next.js",
     "Vercel",
-    "TailwindCSS",
+    "Tailwind CSS",
     "TypeScript",
     "Node",
 ]
-
 
 [[talks]]
 name = "Monitoring Open Source Success in Arduino"
@@ -266,26 +255,23 @@ link = "https://www.youtube.com/watch?v=C4JxwgNnIWU"
 link_text = "/watch?v=C4JxwgNnIWU"
 date = "Oct 2021"
 description = """
-In this talk, I tell the story of how my team started using Datadog in \
-an unusual way to monitor the success of one of the most important of \
-its Open Source projects, the Arduino CLI, by gathering download \
-information from different sources and monitoring build failures. I \
-also explore some of the next steps we can take to gain insight into \
-our other projects.
+In this talk, I share the story of how my team began using Datadog in
+an unconventional way to monitor the success of one of our most important
+Open Source projects, the Arduino CLI. We gathered download information from
+various sources and monitored build failures. I also explore potential next
+steps for gaining deeper insights into our other projects.
 """
 
-
 [[talks]]
-name = "Haystack 2.0: the story of a rewrite"
+name = "Haystack 2.0: The Story of a Rewrite"
 icon = ["fab", "youtube"]
 link = "https://www.youtube.com/watch?v=0CNSvGlMNSo"
 link_text = "/watch?v=0CNSvGlMNSo"
 date = "Apr 2024"
 description = """
-This talk focuses on telling the story of the Haystack 2.0 rewrite \
-that I tackled together with my team. I show some of the pro and cons \
-of starting a rewrite. I also outline some important to do tasks that \
-must be taken into consideration when embarking the rewrite boat. In \
-the end I also present some differences between Haystack 1 and 2 to \
-show off the enhancement we could make because of the rewrite.
+This talk focuses on the story of the Haystack 2.0 rewrite that
+my team and I undertook. I discuss the pros and cons of starting a rewrite
+and outline important tasks to consider before embarking on such a journey.
+In the end, I also present some differences between Haystack 1 and 2 to highlight
+the improvements we achieved through the rewrite.
 """
