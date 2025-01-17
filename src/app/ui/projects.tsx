@@ -22,7 +22,7 @@ function createProject(project: ProjectData) {
 export default function Projects() {
   const { projects }: { projects: ProjectData[] } = config;
   return (
-    <div>
+    <div className="print:break-inside-avoid-page">
       <h2
         className="
       text-2xl
