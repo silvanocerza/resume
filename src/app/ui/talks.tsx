@@ -32,7 +32,7 @@ export default function Talks() {
       border-b-2
       border-green-600"
       >
-        Talks
+        Recorded Talks
       </h2>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
         {talks.map(createTalk)}
