@@ -109,6 +109,33 @@ project, heavily influencing architectural and design decisions.
 """
 
 [[projects]]
+name = "PromptHub"
+type = "work"
+link = "https://github.com/deepset-ai/prompthub"
+link_text = "deepset-ai/prompthub"
+icon = ["fab", "github"]
+technologies = ["Golang", "AWS ECS", "Docker", "GitHub Actions"]
+description = """
+PromptHub is a web service for managing and retrieving LLM prompts, \
+built with Go and packaged in a single Docker container. \
+Runs on AWS ECS with CI/CD pipeline that trigger a deploy \
+whenever a new git tag is pushed.
+"""
+
+[[projects]]
+name = "Obsidian GitHub Sync"
+type = "personal"
+link = "https://github.com/silvanocerza/obsidian-github-sync"
+link_text = "/silvanocerza/obsidian-github-sync"
+icon = ["fab", "github"]
+description = """
+A plugin for Obsidian that syncs your notes with a GitHub repository \
+and vice versa. It uses the GitHub REST API for synchronization rather than git to \
+maximize compatibility with mobile devices and other systems that do not have git installed.
+"""
+technologies = ["TypeScript", "React", "Node", "GitHub Rest API"]
+
+[[projects]]
 name = "OrchestrIA"
 type = "personal"
 link = "https://github.com/orchestria/orchestria"
@@ -119,6 +146,20 @@ description = """
 A versatile agent orchestrator written in Python. \
 Configurable from the command line and with a YAML manifest, it \
 facilitates the creation of tools from existing command-line utilities.
+"""
+
+[[projects]]
+name = "Kibitzer"
+type = "work"
+link = "http://www.moldiscovery.com/software/moka/"
+link_text = "moldiscovery.com/software/moka"
+icon = ["fas", "globe"]
+technologies = ["C", "C++", "Qt", "QML", "Qt Quick"]
+description = """
+Kibitzer is a desktop application designed to train computational models used for \
+predicting the pKa values of molecules. \
+I integrated multiple C and C++ libraries in a multi-threaded \
+environment to speed up statistical computations, thereby improving the user experience.
 """
 
 [[projects]]
@@ -153,19 +194,6 @@ I implemented several minor features, fixed existing bugs, and handled \
 the integration of new functionalities from the Arduino CLI.
 """
 
-[[projects]]
-name = "Kibitzer"
-type = "work"
-link = "http://www.moldiscovery.com/software/moka/"
-link_text = "moldiscovery.com/software/moka"
-icon = ["fas", "globe"]
-technologies = ["C", "C++", "Qt", "QML", "Qt Quick"]
-description = """
-Kibitzer is a desktop application designed to train computational models used for \
-predicting the pKa values of molecules. \
-I integrated multiple C and C++ libraries in a multi-threaded \
-environment to speed up statistical computations, thereby improving the user experience.
-"""
 
 [[projects]]
 name = "MKM SDK"
@@ -201,19 +229,6 @@ I contributed to 'Six', a C++ wrapper around the CPython API supporting \
 multiple versions of Python that can be utilized by other languages such as \
 Go.
 """
-
-[[projects]]
-name = "Obsidian GitHub Sync"
-type = "personal"
-link = "https://github.com/silvanocerza/obsidian-github-sync"
-link_text = "/silvanocerza/obsidian-github-sync"
-icon = ["fab", "github"]
-description = """
-A plugin for Obsidian that syncs your notes with a GitHub repository \
-and vice versa. It uses the GitHub REST API for synchronization rather than git to \
-maximize compatibility with mobile devices and other systems that do not have git installed.
-"""
-technologies = ["TypeScript", "Node", "GitHub Rest API"]
 
 [[projects]]
 name = "Home Server Services"
