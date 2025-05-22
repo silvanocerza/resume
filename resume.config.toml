@@ -123,10 +123,10 @@ whenever a new git tag is pushed.
 """
 
 [[projects]]
-name = "Obsidian GitHub Sync"
+name = "GitHub Gitless Sync"
 type = "personal"
-link = "https://github.com/silvanocerza/obsidian-github-sync"
-link_text = "/silvanocerza/obsidian-github-sync"
+link = "https://github.com/silvanocerza/github-gitless-sync"
+link_text = "/silvanocerza/github-gitless-sync"
 icon = ["fab", "github"]
 description = """
 A plugin for Obsidian that syncs your notes with a GitHub repository \
