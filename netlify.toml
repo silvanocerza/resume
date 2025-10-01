@@ -1,5 +1,5 @@
 [build]
-    command = "pnpm approve-builds puppeteer && npm run build"
+    command = "pnpm run build"
 
 [build.processing.html]
     pretty_urls = true
