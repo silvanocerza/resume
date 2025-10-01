@@ -11,14 +11,16 @@ function findPython(): string | null {
   return null;
 }
 
-const IS_VERCEL = process.env.VERCEL === "1";
+const IS_NETLIFY = process.env.NETLIFY === "1";
 
 const getPuppeteer = async () => {
-  return IS_VERCEL ? await import("puppeteer-core") : await import("puppeteer");
+  return IS_NETLIFY
+    ? await import("puppeteer-core")
+    : await import("puppeteer");
 };
 
 const getChromium = async () => {
-  return IS_VERCEL ? (await import("@sparticuz/chromium")).default : null;
+  return IS_NETLIFY ? (await import("@sparticuz/chromium")).default : null;
 };
 
 (async function createPdf() {
@@ -53,7 +55,7 @@ const getChromium = async () => {
       args?: string[];
       executablePath?: string;
       headless: true;
-    } = IS_VERCEL
+    } = IS_NETLIFY
       ? {
           args: chromium!.args,
           executablePath: await chromium!.executablePath(),

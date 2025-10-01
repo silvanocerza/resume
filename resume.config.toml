@@ -252,12 +252,12 @@ link_text = "/silvanocerza/resume"
 icon = ["fab", "github"]
 description = """
 This resume is built with Next.js and Tailwind CSS, and it is exported to PDF \
-at build time in Vercel.
+at build time in Netlify.
 """
 technologies = [
     "React",
     "Next.js",
-    "Vercel",
+    "Netlify",
     "Tailwind CSS",
     "TypeScript",
     "Node",
