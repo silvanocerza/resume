@@ -16,10 +16,10 @@
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@sparticuz/chromium": "^131.0.1",
-    "next": "15.1.2",
+    "next": "16.0.8",
     "puppeteer": "^24.1.0",
     "puppeteer-core": "^24.1.0",
-    "react": "^19.0.0",
+    "react": "^19.2.1",
     "react-dom": "^19.0.0",
     "toml": "^3.0.0"
   },
