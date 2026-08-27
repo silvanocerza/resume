@@ -1,8 +1,9 @@
 bio = """
-I'm a software engineer based in Matera, Italy, with 10 years of experience. I've been working remotely for the last 8 years. \
+I'm a software engineer based in Matera, Italy, with 11 years of experience. I've been working remotely for the last 8 years. \
 I'm a generalist, though I have more experience with Python. \
 As an Open Source enthusiast, I maintain and contribute to various projects. Occasionally, I speak at conferences \
-such as DataDog DASH and PyCon DE, as well as at local meetups.
+such as DataDog DASH, PyCon IT, PyCon DE, as well as at local meetups. \
+I'm also the founder and president of Matera Tech, a non-profit tech community.
 """
 
 [[socials]]
@@ -34,6 +35,31 @@ link_text = "silvanocerza@gmail.com"
 icon = ["fas", "globe"]
 link = "https://silvanocerza.com"
 link_text = "silvanocerza.com"
+
+[[work_experiences]]
+name = "IPinfo"
+link = "https://ipinfo.io/"
+link_text = "ipinfo.io"
+start_date = "Sep 2025"
+technologies = ["Python", "TypeScript", "Splunk", "Snowflake", "GCP"]
+description = """
+At IPinfo I'm a Senior Integration Engineer.
+My focus is creating integrations with 3rd party products and our main offerings. \
+I maintain and develop integrations with Splunk, Snowflake, GCP, as well as our \
+Open Source libraries in different languages and our MCP that integrates with our REST API.
+I also contribute directly to the backend when new features need be developed to create \
+a new integration or to enhance an existing one.
+"""
+
+[[work_experiences]]
+name = "Freelance"
+start_date = "Jan 2025"
+technologies = ["Python", "TypeScript", "React", "NextJS", "AWS", "GCP"]
+description = """
+Consulting and contract development for early-stage startups, working alongside fractional CTOs. \
+I built an MVP from scratch for a startup in collaboration with a designer, and for another I overhauled \
+the entire backend project, cloud infrastructure and release process.
+"""
 
 [[work_experiences]]
 name = "Deepset"
@@ -136,19 +162,6 @@ maximize compatibility with mobile devices and other systems that do not have gi
 technologies = ["TypeScript", "React", "Node", "GitHub Rest API"]
 
 [[projects]]
-name = "OrchestrIA"
-type = "personal"
-link = "https://github.com/orchestria/orchestria"
-link_text = "/orchestria/orchestria"
-icon = ["fab", "github"]
-technologies = ["Python"]
-description = """
-A versatile agent orchestrator written in Python. \
-Configurable from the command line and with a YAML manifest, it \
-facilitates the creation of tools from existing command-line utilities.
-"""
-
-[[projects]]
 name = "Kibitzer"
 type = "work"
 link = "http://www.moldiscovery.com/software/moka/"
@@ -207,17 +220,6 @@ An open-source SDK for Magic Card Market, using reflection to dynamically resolv
 """
 
 [[projects]]
-name = "Caina"
-type = "personal"
-link = "https://github.com/silvanocerza/caina"
-link_text = "/silvanocerza/caina"
-icon = ["fab", "github"]
-technologies = ["Rust"]
-description = """
-An experimental Rust library implementing the BitTorrent protocol.
-"""
-
-[[projects]]
 name = "Datadog Agent"
 type = "personal"
 link = "https://github.com/DataDog/datadog-agent/commits/main/?author=silvanocerza"
@@ -263,18 +265,45 @@ technologies = [
     "Node",
 ]
 
-[[talks]]
-name = "Monitoring Open Source Success in Arduino"
-icon = ["fab", "youtube"]
-link = "https://www.youtube.com/watch?v=C4JxwgNnIWU"
-link_text = "/watch?v=C4JxwgNnIWU"
-date = "Oct 2021"
+[[community]]
+name = "Matera Tech"
+link = "https://materatech.it"
+link_text = "materatech.it"
+start_date = "Jun 2025"
 description = """
-In this talk, I share the story of how my team began using Datadog in \
-an unconventional way to monitor the success of one of our most important \
-Open Source projects, the Arduino CLI. We gathered download information from \
-various sources and monitored build failures. I also explore potential next \
-steps for gaining deeper insights into our other projects.
+Founder and president of Matera Tech, a non-profit tech community in Matera, Italy. \
+I lead the association's strategic direction and its relationships with partners and institutions. \
+Since founding, we have organized several tech and informal meetups. \
+We collaborate with the local administration and tech companies in an effort to bring new entrepreneurship opportunities in the region. \
+We are working toward opening a coworking space and Fab Lab for the local tech ecosystem.
+"""
+
+[[community]]
+name = "PyBari"
+link = "https://bari.python.it"
+link_text = "bari.python.it"
+start_date = "Jan 2025"
+description = """
+Co-organizer of PyBari, the Python Italia community in Bari. \
+I contribute to all aspects of running the community's meetups: \
+sourcing and hosting speakers, event logistics, and occasionally \
+delivering talks myself on topics of interest to the community.
+"""
+
+
+
+
+[[talks]]
+name = "AI Frameworks Are Making You Worse"
+icon = ["fab", "youtube"]
+link = "https://www.youtube.com/watch?v=mkRg7a5ndEQ"
+link_text = "/watch?v=mkRg7a5ndEQ"
+date = "May 2026"
+description = """
+In this talk I argue that AI frameworks like LangChain, LlamaIndex, and Haystack \
+often do more harm than good: bloat, leaky abstractions, debugging hell. \
+I build real features with plain Python and lightweight libraries first, then \
+show what frameworks layer on top and when their adoption actually becomes justified.
 """
 
 [[talks]]
@@ -289,4 +318,18 @@ my team and I undertook. I discuss the pros and cons of starting a rewrite \
 and outline important tasks to consider before embarking on such a journey. \
 In the end, I also present some differences between Haystack 1 and 2 to highlight \
 the improvements we achieved through the rewrite.
+"""
+
+[[talks]]
+name = "Monitoring Open Source Success in Arduino"
+icon = ["fab", "youtube"]
+link = "https://www.youtube.com/watch?v=C4JxwgNnIWU"
+link_text = "/watch?v=C4JxwgNnIWU"
+date = "Oct 2021"
+description = """
+In this talk, I share the story of how my team began using Datadog in \
+an unconventional way to monitor the success of one of our most important \
+Open Source projects, the Arduino CLI. We gathered download information from \
+various sources and monitored build failures. I also explore potential next \
+steps for gaining deeper insights into our other projects.
 """
