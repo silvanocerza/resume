@@ -20,7 +20,7 @@
     "puppeteer": "^24.1.0",
     "puppeteer-core": "^24.1.0",
     "react": "^19.2.1",
-    "react-dom": "^19.0.0",
+    "react-dom": "^19.2.8",
     "toml": "^3.0.0"
   },
   "devDependencies": {

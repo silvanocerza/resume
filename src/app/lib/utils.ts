@@ -1,7 +1,3 @@
-import path from "path";
-import toml from "toml";
-import fs from "fs";
+import config from "../../../resume.config.toml";
 
-export const config = toml.parse(
-  fs.readFileSync(path.join(process.cwd(), "resume.config.toml"), "utf-8"),
-);
+export { config };
